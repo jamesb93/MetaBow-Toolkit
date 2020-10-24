@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1372.0, 787.0 ],
+		"rect" : [ 34.0, 79.0, 1213.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,103 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-48",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 15.0, 540.0, 79.0, 22.0 ],
+					"text" : "prepend data"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-47",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 285.0, 270.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-45",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 285.0, 315.0, 59.0, 22.0 ],
+					"text" : "record $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 1,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-12",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "grec-mapper.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 15.0, 375.0, 210.0, 150.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 1,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-6",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "grec-bitalino.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 15.0, 15.0, 165.0, 151.0 ],
+					"varname" : "grec-bitalino",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 1,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-3",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "grec-accel.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 15.0, 180.0, 195.0, 180.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-35",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -56,7 +153,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1080.0, 180.0, 285.0, 22.0 ],
-					"text" : "-0.003977 0.006215 -0.471656 0.881752 0."
+					"text" : "0. 0. -0.266667 0. 0."
 				}
 
 			}
@@ -103,13 +200,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-22",
-					"linecount" : 8,
+					"linecount" : 3,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 870.0, 510.0, 50.0, 116.0 ],
-					"text" : "-0.003977 0.006215 -0.471656 0.881752 0."
+					"patching_rect" : [ 870.0, 510.0, 50.0, 49.0 ],
+					"text" : "0. 0. -0.266667 0. 0."
 				}
 
 			}
@@ -150,130 +247,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-4",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 730.0, 510.0, 50.0, 22.0 ],
-					"text" : "0. 1. 0."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 1,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-5",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "grec-player.maxpat",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 761.0, 30.0, 90.0, 165.0 ],
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 1,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-6",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "grec-recorder.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 465.0, 30.0, 150.0, 120.0 ],
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 1,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-7",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "grec-static.maxpat",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 465.0, 210.0, 315.0, 285.0 ],
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-3",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 295.0, 510.0, 50.0, 22.0 ],
-					"text" : "0. 1. 0."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 1,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-1",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "grec-player.maxpat",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 326.0, 30.0, 90.0, 165.0 ],
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 1,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-120",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "grec-recorder.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 30.0, 30.0, 150.0, 120.0 ],
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"bgmode" : 0,
 					"border" : 1,
 					"clickthrough" : 0,
@@ -287,20 +260,13 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 30.0, 210.0, 315.0, 285.0 ],
+					"patching_rect" : [ 255.0, 375.0, 315.0, 285.0 ],
 					"viewvisibility" : 1
 				}
 
 			}
  ],
 		"lines" : [ 			{
-				"patchline" : 				{
-					"destination" : [ "obj-114", 1 ],
-					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-22", 1 ],
 					"order" : 1,
@@ -318,8 +284,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-114", 0 ],
-					"source" : [ "obj-120", 0 ]
+					"destination" : [ "obj-48", 0 ],
+					"source" : [ "obj-12", 0 ]
 				}
 
 			}
@@ -355,61 +321,124 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 1 ],
-					"source" : [ "obj-5", 0 ]
+					"destination" : [ "obj-12", 0 ],
+					"source" : [ "obj-3", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 0 ],
+					"destination" : [ "obj-114", 0 ],
+					"source" : [ "obj-45", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-45", 0 ],
+					"source" : [ "obj-47", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-114", 0 ],
+					"midpoints" : [ 24.5, 537.0, 240.0, 537.0, 240.0, 369.0, 264.5, 369.0 ],
+					"source" : [ "obj-48", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-6", 0 ]
 				}
 
 			}
  ],
 		"parameters" : 		{
-			"obj-120::obj-8" : [ "live.toggle", "live.toggle", 0 ],
-			"obj-7::obj-17" : [ "live.text[3]", "live.text[1]", 0 ],
-			"obj-6::obj-8" : [ "live.toggle[1]", "live.toggle", 0 ],
-			"obj-10::obj-9" : [ "live.numbox[2]", "live.numbox", 0 ],
+			"obj-6::obj-17" : [ "live.text[5]", "live.text[1]", 0 ],
+			"obj-10::obj-31" : [ "live.tab[4]", "live.tab[3]", 0 ],
 			"obj-114::obj-17" : [ "live.text[1]", "live.text[1]", 0 ],
-			"obj-10::obj-35" : [ "live.text[4]", "live.text", 0 ],
-			"obj-10::obj-7" : [ "live.numbox", "live.numbox", 0 ],
-			"obj-114::obj-8" : [ "live.text", "live.text", 0 ],
-			"obj-7::obj-8" : [ "live.text[2]", "live.text", 0 ],
-			"obj-10::obj-10" : [ "live.numbox[3]", "live.numbox", 0 ],
-			"obj-10::obj-8" : [ "live.numbox[1]", "live.numbox", 0 ],
+			"obj-6::obj-15" : [ "live.numbox[6]", "live.numbox[5]", 0 ],
+			"obj-6::obj-11" : [ "live.tab[1]", "live.tab[1]", 0 ],
+			"obj-12::obj-8" : [ "live.numbox[10]", "live.numbox", 0 ],
+			"obj-10::obj-9" : [ "live.numbox[2]", "live.numbox", 0 ],
+			"obj-12::obj-9" : [ "live.numbox[7]", "live.numbox", 0 ],
 			"obj-114::obj-91" : [ "live.tab", "live.tab", 0 ],
-			"obj-7::obj-91" : [ "live.tab[1]", "live.tab", 0 ],
+			"obj-3::obj-3::obj-3" : [ "live.tab[2]", "live.tab", 0 ],
+			"obj-6::obj-1" : [ "live.numbox[5]", "live.numbox[5]", 0 ],
+			"obj-3::obj-3::obj-15" : [ "live.dial", "Smoothing", 0 ],
+			"obj-12::obj-7" : [ "live.numbox[9]", "live.numbox", 0 ],
+			"obj-12::obj-35" : [ "live.text[6]", "live.text", 0 ],
+			"obj-10::obj-10" : [ "live.numbox[3]", "live.numbox", 0 ],
+			"obj-12::obj-10" : [ "live.numbox[8]", "live.numbox", 0 ],
+			"obj-6::obj-16" : [ "live.numbox[4]", "live.numbox", 0 ],
+			"obj-10::obj-7" : [ "live.numbox", "live.numbox", 0 ],
+			"obj-12::obj-31" : [ "live.tab[3]", "live.tab[3]", 0 ],
+			"obj-10::obj-35" : [ "live.text[4]", "live.text", 0 ],
+			"obj-10::obj-8" : [ "live.numbox[1]", "live.numbox", 0 ],
+			"obj-114::obj-8" : [ "live.text", "live.text", 0 ],
 			"parameterbanks" : 			{
 
 			}
 ,
 			"parameter_overrides" : 			{
-				"obj-120::obj-8" : 				{
-					"parameter_longname" : "live.toggle",
-					"parameter_shortname" : "live.toggle"
+				"obj-10::obj-31" : 				{
+					"parameter_longname" : "live.tab[4]"
 				}
 ,
-				"obj-7::obj-17" : 				{
-					"parameter_longname" : "live.text[3]"
+				"obj-12::obj-8" : 				{
+					"parameter_longname" : "live.numbox[10]"
 				}
 ,
-				"obj-6::obj-8" : 				{
-					"parameter_longname" : "live.toggle[1]"
+				"obj-10::obj-9" : 				{
+					"parameter_longname" : "live.numbox[2]"
+				}
+,
+				"obj-12::obj-9" : 				{
+					"parameter_longname" : "live.numbox[7]"
+				}
+,
+				"obj-3::obj-3::obj-3" : 				{
+					"parameter_longname" : "live.tab[2]"
+				}
+,
+				"obj-12::obj-7" : 				{
+					"parameter_longname" : "live.numbox[9]"
+				}
+,
+				"obj-12::obj-35" : 				{
+					"parameter_longname" : "live.text[6]"
+				}
+,
+				"obj-10::obj-10" : 				{
+					"parameter_longname" : "live.numbox[3]"
+				}
+,
+				"obj-12::obj-10" : 				{
+					"parameter_longname" : "live.numbox[8]"
+				}
+,
+				"obj-10::obj-7" : 				{
+					"parameter_longname" : "live.numbox"
+				}
+,
+				"obj-12::obj-31" : 				{
+					"parameter_longname" : "live.tab[3]",
+					"parameter_shortname" : "live.tab[3]",
+					"parameter_invisible" : 0,
+					"parameter_modmode" : 0,
+					"parameter_type" : 2,
+					"parameter_range" : [ "learn", "play" ]
 				}
 ,
 				"obj-10::obj-35" : 				{
 					"parameter_longname" : "live.text[4]"
 				}
 ,
-				"obj-7::obj-8" : 				{
-					"parameter_longname" : "live.text[2]"
-				}
-,
-				"obj-7::obj-91" : 				{
-					"parameter_longname" : "live.tab[1]"
+				"obj-10::obj-8" : 				{
+					"parameter_longname" : "live.numbox[1]"
 				}
 
 			}
@@ -424,28 +453,28 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "grec-recorder.maxpat",
-				"bootpath" : "~/Cloud/Consulting/GestureRecognition",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "grec-player.maxpat",
-				"bootpath" : "~/Cloud/Consulting/GestureRecognition",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "grec-static.maxpat",
-				"bootpath" : "~/Cloud/Consulting/GestureRecognition",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "grec-mapper.maxpat",
+				"bootpath" : "~/Cloud/Consulting/GestureRecognition",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "grec-accel.maxpat",
+				"bootpath" : "~/Cloud/Consulting/GestureRecognition",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "grec-subsmoother.maxpat",
+				"bootpath" : "~/Cloud/Consulting/GestureRecognition",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "grec-bitalino.maxpat",
 				"bootpath" : "~/Cloud/Consulting/GestureRecognition",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
@@ -465,6 +494,10 @@
 			}
 , 			{
 				"name" : "mubu.hhmm.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "pipo.mxo",
 				"type" : "iLaX"
 			}
  ],

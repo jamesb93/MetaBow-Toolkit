@@ -1,0 +1,14 @@
+{
+	"name": "Bitalino Toolbox",
+	"type": "package",
+	"author": "James Bradbury",
+	"description": "A set of utilities for gesture recognition and mapping with the Bitalino R-IoT.",
+	"version": "0.1",
+	"major_version": "0",
+	"minor_version": "1",
+	"min_max_version": "8.1",
+	"min_osx_version": "10.14",
+	"min_win_version": "10",
+	"website": "https://github.com/jamesb93/Bitalino-Toolbox",
+	"relative_path": " "
+}
