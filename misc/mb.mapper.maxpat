@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 854.0, 787.0 ],
+		"rect" : [ 1314.0, 79.0, 811.0, 1327.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,35 @@
 		"style" : "",
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-19",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 60.0, 210.0, 150.0, 33.0 ],
+					"text" : "route all of the stuff around fancy boy"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 60.0, 240.0, 93.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"filename" : "mb.mapper.js",
+						"parameter_enable" : 0
+					}
+,
+					"text" : "js mb.mapper.js"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-97",
 					"maxclass" : "newobj",
@@ -141,7 +170,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1037.0, 270.0, 39.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "-9999"
 				}
 
@@ -186,17 +214,17 @@
 					"presentation_rect" : [ 150.0, 43.5, 45.0, 98.5 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.tab[3]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.tab[3]",
 							"parameter_enum" : [ "learn", "play" ],
 							"parameter_type" : 2,
-							"parameter_unitstyle" : 0
+							"parameter_unitstyle" : 0,
+							"parameter_longname" : "live.tab[3]"
 						}
 
 					}
 ,
-					"varname" : "live.tab"
+					"varname" : "learn_mode"
 				}
 
 			}
@@ -222,7 +250,7 @@
 					"patching_rect" : [ 262.0, 15.0, 110.0, 21.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 50.0, 15.0, 105.0, 21.0 ],
-					"text" : "Bitalino Scaler",
+					"text" : "MBow Scaler",
 					"textjustification" : 1
 				}
 
@@ -324,18 +352,18 @@
 					"presentation_rect" : [ 15.0, 127.000000000000014, 129.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.text[6]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text",
 							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "live.text[6]"
 						}
 
 					}
 ,
 					"text" : "Clip Output",
 					"texton" : "Clip Output",
-					"varname" : "live.text"
+					"varname" : "clip_mode"
 				}
 
 			}
@@ -355,7 +383,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-29",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -427,7 +455,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-11",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -449,17 +477,17 @@
 					"presentation_rect" : [ 15.0, 108.500000000000014, 44.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.numbox[8]",
 							"parameter_mmax" : 99999.0,
 							"parameter_shortname" : "live.numbox",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1,
-							"parameter_mmin" : -99999.0
+							"parameter_mmin" : -99999.0,
+							"parameter_longname" : "live.numbox[8]"
 						}
 
 					}
 ,
-					"varname" : "live.numbox[3]"
+					"varname" : "outhi_numbox"
 				}
 
 			}
@@ -476,17 +504,17 @@
 					"presentation_rect" : [ 15.0, 87.333333333333343, 44.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.numbox[7]",
 							"parameter_mmax" : 99999.0,
 							"parameter_shortname" : "live.numbox",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1,
-							"parameter_mmin" : -99999.0
+							"parameter_mmin" : -99999.0,
+							"parameter_longname" : "live.numbox[7]"
 						}
 
 					}
 ,
-					"varname" : "live.numbox[2]"
+					"varname" : "outlo_numbox"
 				}
 
 			}
@@ -503,17 +531,17 @@
 					"presentation_rect" : [ 15.0, 66.166666666666671, 44.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.numbox[10]",
 							"parameter_mmax" : 99999.0,
 							"parameter_shortname" : "live.numbox",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1,
-							"parameter_mmin" : -99999.0
+							"parameter_mmin" : -99999.0,
+							"parameter_longname" : "live.numbox[10]"
 						}
 
 					}
 ,
-					"varname" : "live.numbox[1]"
+					"varname" : "inhi_numbox"
 				}
 
 			}
@@ -530,17 +558,17 @@
 					"presentation_rect" : [ 15.0, 45.0, 44.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.numbox[9]",
 							"parameter_mmax" : 99999.0,
 							"parameter_shortname" : "live.numbox",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1,
-							"parameter_mmin" : -99999.0
+							"parameter_mmin" : -99999.0,
+							"parameter_longname" : "live.numbox[9]"
 						}
 
 					}
 ,
-					"varname" : "live.numbox"
+					"varname" : "inlo_numbox"
 				}
 
 			}
@@ -1006,7 +1034,29 @@
 				}
 
 			}
- ]
+ ],
+		"parameters" : 		{
+			"obj-9" : [ "live.numbox[7]", "live.numbox", 0 ],
+			"obj-8" : [ "live.numbox[10]", "live.numbox", 0 ],
+			"obj-31" : [ "live.tab[3]", "live.tab[3]", 0 ],
+			"obj-10" : [ "live.numbox[8]", "live.numbox", 0 ],
+			"obj-35" : [ "live.text[6]", "live.text", 0 ],
+			"obj-7" : [ "live.numbox[9]", "live.numbox", 0 ],
+			"parameterbanks" : 			{
+
+			}
+
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "mb.mapper.js",
+				"bootpath" : "~/Cloud/Consulting/GestureRecognition/MetaBow Toolkit/misc",
+				"patcherrelativepath" : ".",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0
 	}
 
 }

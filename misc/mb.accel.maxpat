@@ -67,7 +67,7 @@
 					"maxclass" : "live.line",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 159.0, 390.0, 92.0, 5.0 ],
+					"patching_rect" : [ 114.0, 225.0, 92.0, 5.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 15.0, 38.0, 165.5, 7.0 ]
 				}
@@ -81,10 +81,10 @@
 					"maxclass" : "live.comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 150.0, 345.0, 110.0, 35.0 ],
+					"patching_rect" : [ 105.0, 180.0, 110.0, 35.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 15.0, 15.0, 165.5, 21.0 ],
-					"text" : "Bitalino Accelerometer",
+					"text" : "MBow Accelerometer",
 					"textjustification" : 1
 				}
 
@@ -111,7 +111,7 @@
 					"id" : "obj-3",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "bt.subsmoother.maxpat",
+					"name" : "mb.subsmoother.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
@@ -226,6 +226,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
+					"midpoints" : [ 387.5, 165.0, 24.5, 165.0 ],
 					"source" : [ "obj-6", 1 ]
 				}
 
@@ -233,6 +234,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
+					"midpoints" : [ 320.5, 165.0, 24.5, 165.0 ],
 					"source" : [ "obj-6", 0 ]
 				}
 
