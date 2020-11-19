@@ -1,8 +1,8 @@
 {
-	"name": "Bitalino Toolbox",
+	"name": "Metabow Toolkit",
 	"type": "package",
 	"author": "James Bradbury",
-	"description": "A set of utilities for gesture recognition and mapping with the Bitalino R-IoT.",
+	"description": "A set of utilities for gesture recognition and mapping with the MetaBow.",
 	"version": "0.1",
 	"major_version": "0",
 	"minor_version": "1",
