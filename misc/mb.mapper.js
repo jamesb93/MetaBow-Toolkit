@@ -28,9 +28,8 @@ function loadbang() {
 	inhi(1.0)
 	outlo(1.0)
 	outhi(1.0)
-    clip_mode(0)
-    learn(0)
     clip(0)
+    learn(0)
 }
 function learn(v) {
 	learn_mode.message("set", v)

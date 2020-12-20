@@ -80,7 +80,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 138.0, 180.0, 121.0, 22.0 ],
+					"patching_rect" : [ 165.0, 180.0, 121.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "mb.subsmoother.js",
 						"parameter_enable" : 0
@@ -103,12 +103,12 @@
 					"presentation_rect" : [ 15.0, 15.0, 45.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 100.0,
 							"parameter_shortname" : "Smoothing",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 0,
 							"parameter_mmin" : 3.0,
-							"parameter_longname" : "live.dial",
-							"parameter_mmax" : 100.0
+							"parameter_longname" : "live.dial"
 						}
 
 					}
@@ -132,12 +132,12 @@
 					"presentation_rect" : [ 11.5, 65.0, 52.0, 64.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 2,
 							"parameter_shortname" : "live.tab",
 							"parameter_enum" : [ "none", "average", "median" ],
 							"parameter_type" : 2,
 							"parameter_unitstyle" : 0,
-							"parameter_longname" : "live.tab[2]",
-							"parameter_mmax" : 2
+							"parameter_longname" : "live.tab[2]"
 						}
 
 					}
@@ -228,7 +228,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
-					"midpoints" : [ 283.0, 165.0, 147.5, 165.0 ],
+					"midpoints" : [ 283.0, 165.0, 174.5, 165.0 ],
 					"source" : [ "obj-16", 0 ]
 				}
 
@@ -236,7 +236,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
-					"midpoints" : [ 174.5, 165.0, 147.5, 165.0 ],
+					"midpoints" : [ 174.5, 150.0, 174.5, 150.0 ],
 					"source" : [ "obj-19", 0 ]
 				}
 
@@ -291,7 +291,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
-					"midpoints" : [ 147.5, 150.0, 147.5, 150.0 ],
+					"midpoints" : [ 147.5, 165.0, 174.5, 165.0 ],
 					"source" : [ "obj-4", 1 ]
 				}
 
@@ -306,8 +306,8 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-15" : [ "live.dial", "Smoothing", 0 ],
 			"obj-3" : [ "live.tab[2]", "live.tab", 0 ],
+			"obj-15" : [ "live.dial", "Smoothing", 0 ],
 			"parameterbanks" : 			{
 
 			}

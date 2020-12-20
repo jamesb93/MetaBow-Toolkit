@@ -103,10 +103,10 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 495.0, 68.5, 172.5, 35.0 ],
 					"restore" : 					{
-						"1002_grec-bitalino-device" : [ 0.0 ],
-						"1002_grec-bitalino-port" : [ 8888.0 ],
-						"1002_grec-bitalino-resample" : [ 5.0 ],
-						"1002_grec-bitalino-status" : [ 1.0 ],
+						"1034_grec-bitalino-device" : [ 0.0 ],
+						"1034_grec-bitalino-port" : [ 8888.0 ],
+						"1034_grec-bitalino-resample" : [ 5.0 ],
+						"1034_grec-bitalino-status" : [ 1.0 ],
 						"live.toggle" : [ 0.0 ]
 					}
 ,
@@ -143,13 +143,13 @@
 					"presentation_rect" : [ 15.0, 101.5, 44.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 10.0,
+							"parameter_initial" : [ 0 ],
 							"parameter_shortname" : "live.numbox[5]",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 0,
 							"parameter_longname" : "live.numbox[6]",
-							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 10.0,
-							"parameter_initial" : [ 0 ]
+							"parameter_initial_enable" : 1
 						}
 
 					}
@@ -180,7 +180,7 @@
 					"patching_rect" : [ 17.0, 15.0, 110.0, 21.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 29.5, 15.0, 105.0, 21.0 ],
-					"text" : "MBow Extractor",
+					"text" : "Bitalino Extractor",
 					"textjustification" : 1
 				}
 
@@ -204,12 +204,12 @@
 					"presentation_rect" : [ 15.0, 120.0, 135.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.tab[1]",
 							"parameter_enum" : [ "stop", "start" ],
 							"parameter_type" : 2,
 							"parameter_unitstyle" : 0,
-							"parameter_longname" : "live.tab[1]",
-							"parameter_mmax" : 1
+							"parameter_longname" : "live.tab[1]"
 						}
 
 					}
@@ -257,14 +257,14 @@
 					"presentation_rect" : [ 15.0, 81.5, 44.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 70000.0,
+							"parameter_initial" : [ 8888 ],
 							"parameter_shortname" : "live.numbox[5]",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 0,
 							"parameter_mmin" : 1.0,
 							"parameter_longname" : "live.numbox[5]",
-							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 70000.0,
-							"parameter_initial" : [ 8888 ]
+							"parameter_initial_enable" : 1
 						}
 
 					}
@@ -312,14 +312,14 @@
 					"presentation_rect" : [ 15.0, 63.75, 44.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 10000.0,
+							"parameter_initial" : [ 5 ],
 							"parameter_shortname" : "live.numbox",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 0,
 							"parameter_mmin" : 5.0,
 							"parameter_longname" : "live.numbox[4]",
-							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 10000.0,
-							"parameter_initial" : [ 5 ]
+							"parameter_initial_enable" : 1
 						}
 
 					}
@@ -431,11 +431,11 @@
 					"presentation_rect" : [ 15.0, 46.0, 44.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text[1]",
 							"parameter_enum" : [ "off", "on" ],
 							"parameter_type" : 2,
-							"parameter_longname" : "live.text[5]",
-							"parameter_mmax" : 1
+							"parameter_longname" : "live.text[5]"
 						}
 
 					}

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1314.0, 79.0, 811.0, 1327.0 ],
+		"rect" : [ 34.0, 79.0, 652.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,18 @@
 		"style" : "",
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 150.0, 155.0, 80.0, 22.0 ],
+					"text" : "route float list"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-19",
 					"linecount" : 2,
@@ -73,7 +85,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 379.25, 150.0, 33.0, 22.0 ],
+					"patching_rect" : [ 442.25, 150.0, 33.0, 22.0 ],
 					"text" : "== 0"
 				}
 
@@ -219,7 +231,7 @@
 							"parameter_enum" : [ "learn", "play" ],
 							"parameter_type" : 2,
 							"parameter_unitstyle" : 0,
-							"parameter_longname" : "live.tab[3]"
+							"parameter_longname" : "live.tab[5]"
 						}
 
 					}
@@ -356,7 +368,7 @@
 							"parameter_shortname" : "live.text",
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_type" : 2,
-							"parameter_longname" : "live.text[6]"
+							"parameter_longname" : "live.text[7]"
 						}
 
 					}
@@ -383,7 +395,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-29",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -446,8 +458,8 @@
 					"numinlets" : 9,
 					"numoutlets" : 9,
 					"outlettype" : [ "", "", "", "", "", "", "", "", "" ],
-					"patching_rect" : [ 150.0, 105.0, 281.0, 22.0 ],
-					"text" : "route float list inmin inmax outmin outmax clip learn"
+					"patching_rect" : [ 150.0, 105.0, 353.0, 22.0 ],
+					"text" : "route data data inmin inmax outmin outmax clip learn"
 				}
 
 			}
@@ -455,7 +467,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-11",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -482,7 +494,7 @@
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1,
 							"parameter_mmin" : -99999.0,
-							"parameter_longname" : "live.numbox[8]"
+							"parameter_longname" : "live.numbox[14]"
 						}
 
 					}
@@ -509,7 +521,7 @@
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1,
 							"parameter_mmin" : -99999.0,
-							"parameter_longname" : "live.numbox[7]"
+							"parameter_longname" : "live.numbox[13]"
 						}
 
 					}
@@ -536,7 +548,7 @@
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1,
 							"parameter_mmin" : -99999.0,
-							"parameter_longname" : "live.numbox[10]"
+							"parameter_longname" : "live.numbox[12]"
 						}
 
 					}
@@ -563,7 +575,7 @@
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1,
 							"parameter_mmin" : -99999.0,
-							"parameter_longname" : "live.numbox[9]"
+							"parameter_longname" : "live.numbox[11]"
 						}
 
 					}
@@ -663,39 +675,37 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
-					"midpoints" : [ 323.25, 432.0, 582.0, 432.0, 582.0, 444.0, 605.5, 444.0 ],
+					"midpoints" : [ 368.25, 432.0, 582.0, 432.0, 582.0, 444.0, 605.5, 444.0 ],
 					"source" : [ "obj-12", 5 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-35", 0 ],
-					"midpoints" : [ 356.0, 432.0, 339.5, 432.0 ],
-					"source" : [ "obj-12", 6 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-56", 1 ],
-					"midpoints" : [ 192.25, 195.0, 897.5, 195.0 ],
+					"destination" : [ "obj-18", 0 ],
 					"source" : [ "obj-12", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-65", 1 ],
-					"midpoints" : [ 159.5, 195.0, 837.5, 195.0 ],
+					"destination" : [ "obj-18", 0 ],
 					"source" : [ "obj-12", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-35", 0 ],
+					"midpoints" : [ 410.0, 432.0, 339.5, 432.0 ],
+					"source" : [ "obj-12", 6 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
-					"midpoints" : [ 225.0, 300.0, 605.5, 300.0 ],
+					"midpoints" : [ 243.0, 300.0, 605.5, 300.0 ],
 					"source" : [ "obj-12", 2 ]
 				}
 
@@ -703,7 +713,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
-					"midpoints" : [ 257.75, 384.0, 605.5, 384.0 ],
+					"midpoints" : [ 284.75, 384.0, 605.5, 384.0 ],
 					"source" : [ "obj-12", 3 ]
 				}
 
@@ -711,7 +721,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
-					"midpoints" : [ 290.5, 414.0, 605.5, 414.0 ],
+					"midpoints" : [ 326.5, 414.0, 605.5, 414.0 ],
 					"source" : [ "obj-12", 4 ]
 				}
 
@@ -741,6 +751,22 @@
 				"patchline" : 				{
 					"destination" : [ "obj-34", 1 ],
 					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-56", 1 ],
+					"midpoints" : [ 190.0, 195.0, 897.5, 195.0 ],
+					"source" : [ "obj-18", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-65", 1 ],
+					"midpoints" : [ 159.5, 195.0, 837.5, 195.0 ],
+					"source" : [ "obj-18", 0 ]
 				}
 
 			}
@@ -1029,34 +1055,12 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-31", 0 ],
-					"midpoints" : [ 388.75, 183.0, 915.0, 183.0, 915.0, 33.0, 939.5, 33.0 ],
+					"midpoints" : [ 451.75, 183.0, 915.0, 183.0, 915.0, 33.0, 939.5, 33.0 ],
 					"source" : [ "obj-97", 0 ]
 				}
 
 			}
- ],
-		"parameters" : 		{
-			"obj-9" : [ "live.numbox[7]", "live.numbox", 0 ],
-			"obj-8" : [ "live.numbox[10]", "live.numbox", 0 ],
-			"obj-31" : [ "live.tab[3]", "live.tab[3]", 0 ],
-			"obj-10" : [ "live.numbox[8]", "live.numbox", 0 ],
-			"obj-35" : [ "live.text[6]", "live.text", 0 ],
-			"obj-7" : [ "live.numbox[9]", "live.numbox", 0 ],
-			"parameterbanks" : 			{
-
-			}
-
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "mb.mapper.js",
-				"bootpath" : "~/Cloud/Consulting/GestureRecognition/MetaBow Toolkit/misc",
-				"patcherrelativepath" : ".",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }
