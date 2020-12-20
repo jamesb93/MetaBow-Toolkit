@@ -39,6 +39,19 @@
 		"subpatcher_template" : "Default Max 7",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Lato",
+					"id" : "obj-3",
+					"linecount" : 6,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 15.0, 60.0, 391.0, 93.0 ],
+					"text" : "To assist you in receiving data from the MetaBow, there is an 'extractor' abstraction. This aids you in connecting to the device and observing any changes to the integirty of the connection in real-time. While this toolkit is designed to be used with the MetaBow hardware, other extractors are offered to integrate different hardware with the other abstractions such as for the r-IoT Bitalino."
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgmode" : 0,
 					"border" : 1,
 					"clickthrough" : 0,
@@ -52,7 +65,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 15.0, 240.0, 165.0, 151.0 ],
+					"patching_rect" : [ 15.0, 180.0, 165.0, 151.0 ],
 					"varname" : "grec-bitalino",
 					"viewvisibility" : 1
 				}
@@ -76,11 +89,11 @@
  ],
 		"lines" : [  ],
 		"parameters" : 		{
-			"obj-6::obj-17" : [ "live.text[5]", "live.text[1]", 0 ],
-			"obj-6::obj-11" : [ "live.tab[1]", "live.tab[1]", 0 ],
 			"obj-6::obj-15" : [ "live.numbox[6]", "live.numbox[5]", 0 ],
 			"obj-6::obj-16" : [ "live.numbox[4]", "live.numbox", 0 ],
 			"obj-6::obj-1" : [ "live.numbox[5]", "live.numbox[5]", 0 ],
+			"obj-6::obj-17" : [ "live.text[5]", "live.text[1]", 0 ],
+			"obj-6::obj-11" : [ "live.tab[1]", "live.tab[1]", 0 ],
 			"parameterbanks" : 			{
 
 			}
