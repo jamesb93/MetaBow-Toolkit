@@ -42,12 +42,15 @@ function clip(v) {
 function inlo(v) {
     inlo_numbox.message(v)
 }
+
 function inhi(v) {
     inhi_numbox.message(v)
 }
+
 function outlo(v) {
     outlo_numbox.message(v)
 }
+
 function outhi(v) {
     outlo_numbox.message(v)
 }
