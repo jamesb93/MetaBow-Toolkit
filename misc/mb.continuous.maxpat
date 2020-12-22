@@ -93,7 +93,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 825.0, 188.0, 70.0, 22.0 ],
+					"patching_rect" : [ 825.0, 188.0, 71.0, 22.0 ],
 					"text" : "set_id #0"
 				}
 
@@ -153,13 +153,13 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 304.5, 285.0, 81.0, 22.0 ],
+					"patching_rect" : [ 304.5, 285.0, 111.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"filename" : "mb.static.js",
+						"filename" : "mb.continuous.js",
 						"parameter_enable" : 0
 					}
 ,
-					"text" : "js mb.static.js"
+					"text" : "js mb.continuous.js"
 				}
 
 			}
@@ -674,7 +674,7 @@
 					"cursor_size" : 3,
 					"cursor_sizeunit" : 0,
 					"cursor_visible" : 1,
-					"domain_bounds" : [ 0.0, 12.048192771084338 ],
+					"domain_bounds" : [ 0.0, 1.0 ],
 					"domainruler_bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"domainruler_fgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"domainruler_grid" : 0,
@@ -741,7 +741,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 56.5, 225.0, 94.0, 35.0 ],
+					"patching_rect" : [ 56.5, 225.0, 97.0, 35.0 ],
 					"text" : "loadmess name #0_grec"
 				}
 
