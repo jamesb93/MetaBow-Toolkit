@@ -12,7 +12,7 @@
 		"classnamespace" : "box",
 		"rect" : [ 34.0, 79.0, 830.0, 787.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -288,14 +288,13 @@
 					"fontname" : "Lato",
 					"fontsize" : 14.0,
 					"id" : "obj-87",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 450.0, 540.0, 195.0, 40.0 ],
+					"patching_rect" : [ 450.0, 540.0, 195.0, 23.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 165.0, 240.0, 270.0, 23.0 ],
-					"text" : "Hello It's me from the other side.",
+					"text" : "undefined",
 					"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
 				}
 
@@ -618,15 +617,15 @@
 					"fontname" : "Lato",
 					"fontsize" : 14.0,
 					"id" : "obj-40",
-					"linecount" : 10,
+					"linecount" : 7,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 240.0, 540.0, 199.0, 174.0 ],
+					"patching_rect" : [ 240.0, 540.0, 199.0, 124.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 7,
-					"presentation_rect" : [ 165.0, 105.0, 270.0, 124.0 ],
-					"text" : "This tutorial covers the design of the MetaBow toolkit framework and how to use it. It approaches this topic assuming you have minimal knowledge of Max , while presenting some of the more powerful programmatic possibilities of the abstraction suite.",
+					"presentation_linecount" : 5,
+					"presentation_rect" : [ 165.0, 105.0, 270.0, 90.0 ],
+					"text" : "Processing is an umbrella term capturing a number of applications involving our sensor data. For example , this can include continuous and discrete gesture recognition or simple 1-to-1 mapping.",
 					"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
 				}
 
@@ -655,7 +654,7 @@
 					"patching_rect" : [ 131.0, 540.0, 123.0, 28.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 165.0, 75.0, 210.0, 28.0 ],
-					"text" : "Framework",
+					"text" : "Processing",
 					"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
 				}
 
