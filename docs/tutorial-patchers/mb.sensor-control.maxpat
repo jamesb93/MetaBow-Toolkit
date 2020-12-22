@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 652.0, 787.0 ],
+		"rect" : [ 34.0, 79.0, 662.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -55,7 +55,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 105.0, 652.0, 761.0 ],
+						"rect" : [ 34.0, 105.0, 662.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -507,7 +507,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 36.0, 79.0, 753.0, 531.0 ],
+						"rect" : [ 0.0, 26.0, 662.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -535,8 +535,19 @@
 						"style" : "",
 						"subpatcher_template" : "Default Max 7",
 						"showontab" : 1,
-						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-1",
+									"justification" : 1,
+									"linecolor" : [ 0.352941176470588, 0.352941176470588, 0.352941176470588, 0.5 ],
+									"maxclass" : "live.line",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 15.0, 155.0, 630.0, 14.0 ]
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-9",
 									"linecount" : 8,
@@ -544,7 +555,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 240.0, 403.0, 285.0, 114.0 ],
-									"presentation_linecount" : 12,
 									"text" : "Scaling is useful for taking an input number range and mapping it to an output number range. The abstraction can be programatically altered in real-time and features a learn mode where it maintains a memory of the minimum and maximum numbers it receives in the input stream till it is switched back to the play mode. This can be useful if you don't know the ranges to set beforehand."
 								}
 
@@ -571,7 +581,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 240.0, 375.0, 285.0, 26.0 ],
-									"presentation_linecount" : 2,
 									"text" : "General Purpose Mapping and Scaling"
 								}
 
@@ -677,101 +686,101 @@
  ],
 		"lines" : [  ],
 		"parameters" : 		{
-			"obj-1::obj-12::obj-8" : [ "live.numbox[10]", "live.numbox", 0 ],
 			"obj-1::obj-12::obj-7" : [ "live.numbox[9]", "live.numbox", 0 ],
-			"obj-2::obj-25::obj-31" : [ "live.tab[6]", "live.tab[3]", 0 ],
 			"obj-2::obj-12::obj-35" : [ "live.text[7]", "live.text", 0 ],
-			"obj-2::obj-25::obj-9" : [ "live.numbox[18]", "live.numbox", 0 ],
-			"obj-2::obj-12::obj-9" : [ "live.numbox[13]", "live.numbox", 0 ],
-			"obj-2::obj-12::obj-7" : [ "live.numbox[11]", "live.numbox", 0 ],
-			"obj-1::obj-3::obj-3::obj-3" : [ "live.tab[2]", "live.tab", 0 ],
-			"obj-1::obj-12::obj-31" : [ "live.tab[3]", "live.tab[3]", 0 ],
-			"obj-2::obj-12::obj-31" : [ "live.tab[5]", "live.tab[3]", 0 ],
-			"obj-1::obj-12::obj-35" : [ "live.text[6]", "live.text", 0 ],
-			"obj-2::obj-25::obj-7" : [ "live.numbox[15]", "live.numbox", 0 ],
-			"obj-2::obj-25::obj-10" : [ "live.numbox[17]", "live.numbox", 0 ],
-			"obj-2::obj-25::obj-35" : [ "live.text[8]", "live.text", 0 ],
-			"obj-2::obj-12::obj-10" : [ "live.numbox[14]", "live.numbox", 0 ],
 			"obj-2::obj-25::obj-8" : [ "live.numbox[16]", "live.numbox", 0 ],
+			"obj-2::obj-12::obj-10" : [ "live.numbox[14]", "live.numbox", 0 ],
+			"obj-2::obj-12::obj-9" : [ "live.numbox[13]", "live.numbox", 0 ],
 			"obj-2::obj-12::obj-8" : [ "live.numbox[12]", "live.numbox", 0 ],
-			"obj-1::obj-12::obj-10" : [ "live.numbox[8]", "live.numbox", 0 ],
+			"obj-1::obj-12::obj-31" : [ "live.tab[3]", "live.tab[3]", 0 ],
+			"obj-2::obj-12::obj-7" : [ "live.numbox[11]", "live.numbox", 0 ],
+			"obj-2::obj-25::obj-31" : [ "live.tab[6]", "live.tab[3]", 0 ],
 			"obj-1::obj-3::obj-3::obj-15" : [ "live.dial", "Smoothing", 0 ],
+			"obj-1::obj-12::obj-35" : [ "live.text[6]", "live.text", 0 ],
+			"obj-1::obj-12::obj-10" : [ "live.numbox[8]", "live.numbox", 0 ],
+			"obj-2::obj-25::obj-9" : [ "live.numbox[18]", "live.numbox", 0 ],
+			"obj-1::obj-3::obj-3::obj-3" : [ "live.tab[2]", "live.tab", 0 ],
 			"obj-1::obj-12::obj-9" : [ "live.numbox[7]", "live.numbox", 0 ],
+			"obj-2::obj-25::obj-35" : [ "live.text[8]", "live.text", 0 ],
+			"obj-2::obj-25::obj-7" : [ "live.numbox[15]", "live.numbox", 0 ],
+			"obj-1::obj-12::obj-8" : [ "live.numbox[10]", "live.numbox", 0 ],
+			"obj-2::obj-12::obj-31" : [ "live.tab[5]", "live.tab[3]", 0 ],
+			"obj-2::obj-25::obj-10" : [ "live.numbox[17]", "live.numbox", 0 ],
 			"parameterbanks" : 			{
 
 			}
 ,
 			"parameter_overrides" : 			{
-				"obj-1::obj-12::obj-8" : 				{
-					"parameter_longname" : "live.numbox[10]"
-				}
-,
 				"obj-1::obj-12::obj-7" : 				{
 					"parameter_longname" : "live.numbox[9]"
-				}
-,
-				"obj-2::obj-25::obj-31" : 				{
-					"parameter_longname" : "live.tab[6]"
 				}
 ,
 				"obj-2::obj-12::obj-35" : 				{
 					"parameter_longname" : "live.text[7]"
 				}
 ,
-				"obj-2::obj-25::obj-9" : 				{
-					"parameter_longname" : "live.numbox[18]"
-				}
-,
-				"obj-2::obj-12::obj-9" : 				{
-					"parameter_longname" : "live.numbox[13]"
-				}
-,
-				"obj-2::obj-12::obj-7" : 				{
-					"parameter_longname" : "live.numbox[11]"
-				}
-,
-				"obj-1::obj-12::obj-31" : 				{
-					"parameter_longname" : "live.tab[3]"
-				}
-,
-				"obj-2::obj-12::obj-31" : 				{
-					"parameter_longname" : "live.tab[5]"
-				}
-,
-				"obj-1::obj-12::obj-35" : 				{
-					"parameter_longname" : "live.text[6]"
-				}
-,
-				"obj-2::obj-25::obj-7" : 				{
-					"parameter_longname" : "live.numbox[15]"
-				}
-,
-				"obj-2::obj-25::obj-10" : 				{
-					"parameter_longname" : "live.numbox[17]"
-				}
-,
-				"obj-2::obj-25::obj-35" : 				{
-					"parameter_longname" : "live.text[8]"
+				"obj-2::obj-25::obj-8" : 				{
+					"parameter_longname" : "live.numbox[16]"
 				}
 ,
 				"obj-2::obj-12::obj-10" : 				{
 					"parameter_longname" : "live.numbox[14]"
 				}
 ,
-				"obj-2::obj-25::obj-8" : 				{
-					"parameter_longname" : "live.numbox[16]"
+				"obj-2::obj-12::obj-9" : 				{
+					"parameter_longname" : "live.numbox[13]"
 				}
 ,
 				"obj-2::obj-12::obj-8" : 				{
 					"parameter_longname" : "live.numbox[12]"
 				}
 ,
+				"obj-1::obj-12::obj-31" : 				{
+					"parameter_longname" : "live.tab[3]"
+				}
+,
+				"obj-2::obj-12::obj-7" : 				{
+					"parameter_longname" : "live.numbox[11]"
+				}
+,
+				"obj-2::obj-25::obj-31" : 				{
+					"parameter_longname" : "live.tab[6]"
+				}
+,
+				"obj-1::obj-12::obj-35" : 				{
+					"parameter_longname" : "live.text[6]"
+				}
+,
 				"obj-1::obj-12::obj-10" : 				{
 					"parameter_longname" : "live.numbox[8]"
 				}
 ,
+				"obj-2::obj-25::obj-9" : 				{
+					"parameter_longname" : "live.numbox[18]"
+				}
+,
 				"obj-1::obj-12::obj-9" : 				{
 					"parameter_longname" : "live.numbox[7]"
+				}
+,
+				"obj-2::obj-25::obj-35" : 				{
+					"parameter_longname" : "live.text[8]"
+				}
+,
+				"obj-2::obj-25::obj-7" : 				{
+					"parameter_longname" : "live.numbox[15]"
+				}
+,
+				"obj-1::obj-12::obj-8" : 				{
+					"parameter_longname" : "live.numbox[10]"
+				}
+,
+				"obj-2::obj-12::obj-31" : 				{
+					"parameter_longname" : "live.tab[5]"
+				}
+,
+				"obj-2::obj-25::obj-10" : 				{
+					"parameter_longname" : "live.numbox[17]"
 				}
 
 			}
