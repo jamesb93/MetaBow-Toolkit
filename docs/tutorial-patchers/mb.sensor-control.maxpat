@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -38,6 +38,7 @@
 		"style" : "",
 		"subpatcher_template" : "Default Max 7",
 		"showontab" : 1,
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-2",
@@ -49,13 +50,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 105.0, 662.0, 761.0 ],
+						"rect" : [ 0.0, 26.0, 662.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -83,6 +84,7 @@
 						"style" : "",
 						"subpatcher_template" : "Default Max 7",
 						"showontab" : 1,
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-49",
@@ -501,13 +503,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 662.0, 761.0 ],
+						"rect" : [ 34.0, 105.0, 662.0, 761.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -535,7 +537,54 @@
 						"style" : "",
 						"subpatcher_template" : "Default Max 7",
 						"showontab" : 1,
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-7",
+									"linecount" : 7,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 225.0, 585.0, 202.0, 100.0 ],
+									"text" : "This abstaction is designed to take the fuss out of isolating and smoothing the accelerometer data from the Meta Bow hardware. It possesses two different kinds of smoothing techniques and a control for the intensity of each."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 1,
+									"fontname" : "Lato",
+									"fontsize" : 16.0,
+									"id" : "obj-10",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 225.0, 555.0, 202.0, 26.0 ],
+									"text" : "Magnetic Detector"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgmode" : 0,
+									"border" : 1,
+									"clickthrough" : 0,
+									"enablehscroll" : 0,
+									"enablevscroll" : 0,
+									"id" : "obj-11",
+									"lockeddragscroll" : 0,
+									"maxclass" : "bpatcher",
+									"name" : "mb.accel.maxpat",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"offset" : [ 0.0, 0.0 ],
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 15.0, 555.0, 195.0, 180.0 ],
+									"viewvisibility" : 1
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-1",
 									"justification" : 1,
@@ -686,81 +735,95 @@
  ],
 		"lines" : [  ],
 		"parameters" : 		{
-			"obj-1::obj-12::obj-7" : [ "live.numbox[9]", "live.numbox", 0 ],
-			"obj-2::obj-12::obj-35" : [ "live.text[7]", "live.text", 0 ],
-			"obj-2::obj-25::obj-8" : [ "live.numbox[16]", "live.numbox", 0 ],
-			"obj-2::obj-12::obj-10" : [ "live.numbox[14]", "live.numbox", 0 ],
-			"obj-2::obj-12::obj-9" : [ "live.numbox[13]", "live.numbox", 0 ],
-			"obj-2::obj-12::obj-8" : [ "live.numbox[12]", "live.numbox", 0 ],
-			"obj-1::obj-12::obj-31" : [ "live.tab[3]", "live.tab[3]", 0 ],
-			"obj-2::obj-12::obj-7" : [ "live.numbox[11]", "live.numbox", 0 ],
-			"obj-2::obj-25::obj-31" : [ "live.tab[6]", "live.tab[3]", 0 ],
-			"obj-1::obj-3::obj-3::obj-15" : [ "live.dial", "Smoothing", 0 ],
-			"obj-1::obj-12::obj-35" : [ "live.text[6]", "live.text", 0 ],
+			"obj-1::obj-11::obj-3::obj-15" : [ "live.dial[1]", "Smoothing", 0 ],
+			"obj-1::obj-11::obj-3::obj-3" : [ "live.tab[7]", "live.tab", 0 ],
 			"obj-1::obj-12::obj-10" : [ "live.numbox[8]", "live.numbox", 0 ],
-			"obj-2::obj-25::obj-9" : [ "live.numbox[18]", "live.numbox", 0 ],
-			"obj-1::obj-3::obj-3::obj-3" : [ "live.tab[2]", "live.tab", 0 ],
+			"obj-1::obj-12::obj-31" : [ "live.tab[3]", "live.tab[3]", 0 ],
+			"obj-1::obj-12::obj-35" : [ "live.text[6]", "live.text", 0 ],
+			"obj-1::obj-12::obj-7" : [ "live.numbox[9]", "live.numbox", 0 ],
+			"obj-1::obj-12::obj-8" : [ "live.numbox[10]", "live.numbox", 0 ],
 			"obj-1::obj-12::obj-9" : [ "live.numbox[7]", "live.numbox", 0 ],
+			"obj-1::obj-3::obj-3::obj-15" : [ "live.dial", "Smoothing", 0 ],
+			"obj-1::obj-3::obj-3::obj-3" : [ "live.tab[2]", "live.tab", 0 ],
+			"obj-2::obj-12::obj-10" : [ "live.numbox[14]", "live.numbox", 0 ],
+			"obj-2::obj-12::obj-31" : [ "live.tab[5]", "live.tab[3]", 0 ],
+			"obj-2::obj-12::obj-35" : [ "live.text[7]", "live.text", 0 ],
+			"obj-2::obj-12::obj-7" : [ "live.numbox[11]", "live.numbox", 0 ],
+			"obj-2::obj-12::obj-8" : [ "live.numbox[12]", "live.numbox", 0 ],
+			"obj-2::obj-12::obj-9" : [ "live.numbox[13]", "live.numbox", 0 ],
+			"obj-2::obj-25::obj-10" : [ "live.numbox[17]", "live.numbox", 0 ],
+			"obj-2::obj-25::obj-31" : [ "live.tab[6]", "live.tab[3]", 0 ],
 			"obj-2::obj-25::obj-35" : [ "live.text[8]", "live.text", 0 ],
 			"obj-2::obj-25::obj-7" : [ "live.numbox[15]", "live.numbox", 0 ],
-			"obj-1::obj-12::obj-8" : [ "live.numbox[10]", "live.numbox", 0 ],
-			"obj-2::obj-12::obj-31" : [ "live.tab[5]", "live.tab[3]", 0 ],
-			"obj-2::obj-25::obj-10" : [ "live.numbox[17]", "live.numbox", 0 ],
+			"obj-2::obj-25::obj-8" : [ "live.numbox[16]", "live.numbox", 0 ],
+			"obj-2::obj-25::obj-9" : [ "live.numbox[18]", "live.numbox", 0 ],
 			"parameterbanks" : 			{
 
 			}
 ,
 			"parameter_overrides" : 			{
-				"obj-1::obj-12::obj-7" : 				{
-					"parameter_longname" : "live.numbox[9]"
+				"obj-1::obj-11::obj-3::obj-15" : 				{
+					"parameter_longname" : "live.dial[1]"
 				}
 ,
-				"obj-2::obj-12::obj-35" : 				{
-					"parameter_longname" : "live.text[7]"
-				}
-,
-				"obj-2::obj-25::obj-8" : 				{
-					"parameter_longname" : "live.numbox[16]"
-				}
-,
-				"obj-2::obj-12::obj-10" : 				{
-					"parameter_longname" : "live.numbox[14]"
-				}
-,
-				"obj-2::obj-12::obj-9" : 				{
-					"parameter_longname" : "live.numbox[13]"
-				}
-,
-				"obj-2::obj-12::obj-8" : 				{
-					"parameter_longname" : "live.numbox[12]"
-				}
-,
-				"obj-1::obj-12::obj-31" : 				{
-					"parameter_longname" : "live.tab[3]"
-				}
-,
-				"obj-2::obj-12::obj-7" : 				{
-					"parameter_longname" : "live.numbox[11]"
-				}
-,
-				"obj-2::obj-25::obj-31" : 				{
-					"parameter_longname" : "live.tab[6]"
-				}
-,
-				"obj-1::obj-12::obj-35" : 				{
-					"parameter_longname" : "live.text[6]"
+				"obj-1::obj-11::obj-3::obj-3" : 				{
+					"parameter_longname" : "live.tab[7]"
 				}
 ,
 				"obj-1::obj-12::obj-10" : 				{
 					"parameter_longname" : "live.numbox[8]"
 				}
 ,
-				"obj-2::obj-25::obj-9" : 				{
-					"parameter_longname" : "live.numbox[18]"
+				"obj-1::obj-12::obj-31" : 				{
+					"parameter_longname" : "live.tab[3]"
+				}
+,
+				"obj-1::obj-12::obj-35" : 				{
+					"parameter_longname" : "live.text[6]"
+				}
+,
+				"obj-1::obj-12::obj-7" : 				{
+					"parameter_longname" : "live.numbox[9]"
+				}
+,
+				"obj-1::obj-12::obj-8" : 				{
+					"parameter_longname" : "live.numbox[10]"
 				}
 ,
 				"obj-1::obj-12::obj-9" : 				{
 					"parameter_longname" : "live.numbox[7]"
+				}
+,
+				"obj-2::obj-12::obj-10" : 				{
+					"parameter_longname" : "live.numbox[14]"
+				}
+,
+				"obj-2::obj-12::obj-31" : 				{
+					"parameter_longname" : "live.tab[5]"
+				}
+,
+				"obj-2::obj-12::obj-35" : 				{
+					"parameter_longname" : "live.text[7]"
+				}
+,
+				"obj-2::obj-12::obj-7" : 				{
+					"parameter_longname" : "live.numbox[11]"
+				}
+,
+				"obj-2::obj-12::obj-8" : 				{
+					"parameter_longname" : "live.numbox[12]"
+				}
+,
+				"obj-2::obj-12::obj-9" : 				{
+					"parameter_longname" : "live.numbox[13]"
+				}
+,
+				"obj-2::obj-25::obj-10" : 				{
+					"parameter_longname" : "live.numbox[17]"
+				}
+,
+				"obj-2::obj-25::obj-31" : 				{
+					"parameter_longname" : "live.tab[6]"
 				}
 ,
 				"obj-2::obj-25::obj-35" : 				{
@@ -771,20 +834,17 @@
 					"parameter_longname" : "live.numbox[15]"
 				}
 ,
-				"obj-1::obj-12::obj-8" : 				{
-					"parameter_longname" : "live.numbox[10]"
+				"obj-2::obj-25::obj-8" : 				{
+					"parameter_longname" : "live.numbox[16]"
 				}
 ,
-				"obj-2::obj-12::obj-31" : 				{
-					"parameter_longname" : "live.tab[5]"
-				}
-,
-				"obj-2::obj-25::obj-10" : 				{
-					"parameter_longname" : "live.numbox[17]"
+				"obj-2::obj-25::obj-9" : 				{
+					"parameter_longname" : "live.numbox[18]"
 				}
 
 			}
-
+,
+			"inherited_shortname" : 1
 		}
 ,
 		"dependency_cache" : [ 			{

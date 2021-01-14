@@ -20,7 +20,6 @@ function loadbang() {
 	smoothing(3);
 }
 
-
 function smoothing(v) {
 	median.message("median.size", v);
 	mvavrg.message("mvavrg.size", v);
@@ -37,3 +36,4 @@ function mode(v) {
 	smooth_mode.message("set", v)
 	mode_gate.message(v+1)
 }
+

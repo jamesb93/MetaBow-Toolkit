@@ -40,6 +40,17 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 105.0, 750.0, 32.0, 22.0 ],
+					"text" : "print"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-11",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -53,13 +64,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-6",
-					"linecount" : 2,
+					"linecount" : 6,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 60.0, 750.0, 50.0, 35.0 ],
-					"text" : "0.069378"
+					"patching_rect" : [ 60.0, 750.0, 50.0, 89.0 ],
+					"text" : "likelihood 0.403755 0.596245"
 				}
 
 			}
@@ -471,10 +482,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 416.0, 730.0, 329.0, 50.0 ],
+					"patching_rect" : [ 416.0, 730.0, 332.0, 50.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 15.0, 520.0, 329.0, 50.0 ],
+					"presentation_rect" : [ 15.0, 520.0, 332.0, 50.0 ],
 					"text" : "In play mode new data is supplied to the abstraction and an estimation is made for both the gesture that is being performed as well as the state that it is in.",
 					"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
 				}
@@ -634,7 +645,7 @@
 					"id" : "obj-1",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "mb.continuous.maxpat",
+					"name" : "mb.static.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
@@ -657,15 +668,31 @@
 					"patching_rect" : [ 15.0, 15.0, 315.0, 45.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 15.0, 15.0, 387.0, 45.0 ],
-					"text" : "mb.continuous"
+					"text" : "mb.static"
 				}
 
 			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-6", 1 ],
+					"destination" : [ "obj-3", 0 ],
+					"order" : 0,
 					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 1 ],
+					"order" : 1,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-10", 1 ]
 				}
 
 			}
@@ -913,14 +940,14 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "mb.continuous.maxpat",
+				"name" : "mb.static.maxpat",
 				"bootpath" : "~/Cloud/Consulting/GestureRecognition/MetaBow Toolkit/misc",
 				"patcherrelativepath" : "../misc",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "mb.continuous.js",
+				"name" : "mb.static.js",
 				"bootpath" : "~/Cloud/Consulting/GestureRecognition/MetaBow Toolkit/misc",
 				"patcherrelativepath" : "../misc",
 				"type" : "TEXT",
@@ -946,7 +973,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "mubu.hhmm.mxo",
+				"name" : "mubu.gmm.mxo",
 				"type" : "iLaX"
 			}
  ],

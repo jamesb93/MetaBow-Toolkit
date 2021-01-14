@@ -6,15 +6,19 @@ var _numbuffers = 2;
 var _mode = 0; // 0 = learn, 1 = play
 
 // Patch
-var record = null;
-var hhmm = null;
+var data_record = null;
+var audio_record = null;
+var xmm = null;
+var knn = null;
 var gesture_select = null;
 var mode_gate = null;
 
 
 function loadbang() {
-	record  	   = this.patcher.getnamed("record")
-	hhmm   		   = this.patcher.getnamed("hhmm")
+	data_record	   = this.patcher.getnamed("data_record")
+	audio_record   = this.patcher.getnamed("audio_record")
+	xmm   		   = this.patcher.getnamed("xmm")
+	knn 		   = this.patcher.getnamed("knn")
 	gesture_select = this.patcher.getnamed("select")
 	mode_gate 	   = this.patcher.getnamed("mode_gate")
 }
@@ -60,15 +64,16 @@ function bufferindex(v) {
 		idx = v
 	}
 	gesture_select.message("set", idx)
-	record.message("bufferindex", idx)
+	data_record.message("bufferindex", idx)
+	audio_record.message("bufferindex", idx)
 }
 
-// hhmm functions
-function train(v) {hhmm.message("train")}
+//xmm functions
+function train(v) {xmm.message("train")}
 
-function states(v) {hhmm.message("states", v)}
+function gaussians(v) {xmm.message("gaussians", v)}
 
-function regularization(v) {hhmm.message("regularization", v)}
+function regularization(v) {xmm.message("regularization", v)}
 
 
 // Dictionaries

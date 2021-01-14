@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 652.0, 787.0 ],
+		"rect" : [ 34.0, 115.0, 972.0, 759.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,7 +38,100 @@
 		"style" : "",
 		"subpatcher_template" : "Default Max 7",
 		"showontab" : 1,
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1005.0, 435.0, 317.0, 47.0 ],
+					"text" : "Temporal Mapping helps you map gestures to sounds more diretctly without having to add code around the continuous gesture recognition abstraction."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"fontname" : "Lato",
+					"fontsize" : 16.0,
+					"id" : "obj-14",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1005.0, 405.0, 285.0, 26.0 ],
+					"text" : "Temporal Mapping"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 1,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-15",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "mb.temporal.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 675.0, 405.0, 315.0, 255.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"linecount" : 8,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 345.0, 435.0, 317.0, 114.0 ],
+					"text" : "Continuous Gesture Recognition is useful when you want to identify which gesture is being performed as well as 'where' in the gesture you currently are. Imagine drawing two different shapes. Your hand performs two unique gestures over time to do this. Continuous Gesture Recogntion is able to recognise not only which shape you are drawing, but where in the drawing of that shape you are."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"fontname" : "Lato",
+					"fontsize" : 16.0,
+					"id" : "obj-7",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 345.0, 405.0, 285.0, 26.0 ],
+					"text" : "Static Gesture Recognition"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 1,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-9",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "mb.static.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 15.0, 405.0, 315.0, 255.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-8",
 					"linecount" : 8,
@@ -128,25 +221,82 @@
  ],
 		"lines" : [  ],
 		"parameters" : 		{
-			"obj-1::obj-8" : [ "live.text", "live.text", 0 ],
-			"obj-1::obj-79" : [ "live.text[3]", "live.text[2]", 0 ],
-			"obj-1::obj-91" : [ "live.tab", "live.tab", 0 ],
+			"obj-15::obj-17" : [ "live.text[9]", "live.text[1]", 0 ],
+			"obj-15::obj-78" : [ "live.text[12]", "live.text[2]", 0 ],
+			"obj-15::obj-79" : [ "live.text[13]", "live.text[2]", 0 ],
+			"obj-15::obj-8" : [ "live.text[11]", "live.text", 0 ],
+			"obj-15::obj-91" : [ "live.tab[2]", "live.tab", 0 ],
 			"obj-1::obj-17" : [ "live.text[1]", "live.text[1]", 0 ],
 			"obj-1::obj-78" : [ "live.text[2]", "live.text[2]", 0 ],
+			"obj-1::obj-79" : [ "live.text[3]", "live.text[2]", 0 ],
+			"obj-1::obj-8" : [ "live.text", "live.text", 0 ],
+			"obj-1::obj-91" : [ "live.tab", "live.tab", 0 ],
+			"obj-9::obj-17" : [ "live.text[6]", "live.text[1]", 0 ],
+			"obj-9::obj-78" : [ "live.text[5]", "live.text[2]", 0 ],
+			"obj-9::obj-79" : [ "live.text[7]", "live.text[2]", 0 ],
+			"obj-9::obj-8" : [ "live.text[4]", "live.text", 0 ],
+			"obj-9::obj-91" : [ "live.tab[1]", "live.tab", 0 ],
 			"parameterbanks" : 			{
 
 			}
 ,
 			"parameter_overrides" : 			{
+				"obj-15::obj-17" : 				{
+					"parameter_longname" : "live.text[9]"
+				}
+,
+				"obj-15::obj-78" : 				{
+					"parameter_longname" : "live.text[12]"
+				}
+,
+				"obj-15::obj-79" : 				{
+					"parameter_longname" : "live.text[13]"
+				}
+,
+				"obj-15::obj-8" : 				{
+					"parameter_longname" : "live.text[11]"
+				}
+,
+				"obj-15::obj-91" : 				{
+					"parameter_longname" : "live.tab[2]"
+				}
+,
 				"obj-1::obj-91" : 				{
 					"parameter_invisible" : 0,
 					"parameter_modmode" : 0,
+					"parameter_range" : [ "0", "1" ],
 					"parameter_type" : 2,
-					"parameter_range" : [ "0", "1" ]
+					"parameter_unitstyle" : 9
+				}
+,
+				"obj-9::obj-17" : 				{
+					"parameter_longname" : "live.text[6]"
+				}
+,
+				"obj-9::obj-78" : 				{
+					"parameter_longname" : "live.text[5]"
+				}
+,
+				"obj-9::obj-79" : 				{
+					"parameter_longname" : "live.text[7]"
+				}
+,
+				"obj-9::obj-8" : 				{
+					"parameter_longname" : "live.text[4]"
+				}
+,
+				"obj-9::obj-91" : 				{
+					"parameter_invisible" : 0,
+					"parameter_longname" : "live.tab[1]",
+					"parameter_modmode" : 0,
+					"parameter_range" : [ "0", "1" ],
+					"parameter_type" : 2,
+					"parameter_unitstyle" : 9
 				}
 
 			}
-
+,
+			"inherited_shortname" : 1
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -164,6 +314,27 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "mb.static.maxpat",
+				"bootpath" : "~/Cloud/Consulting/GestureRecognition/MetaBow Toolkit/misc",
+				"patcherrelativepath" : "../../misc",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "mb.static.js",
+				"bootpath" : "~/Cloud/Consulting/GestureRecognition/MetaBow Toolkit/misc",
+				"patcherrelativepath" : "../../misc",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "mb.temporal.maxpat",
+				"bootpath" : "~/Cloud/Consulting/GestureRecognition/MetaBow Toolkit/misc",
+				"patcherrelativepath" : "../../misc",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "mubu.mxo",
 				"type" : "iLaX"
 			}
@@ -177,6 +348,10 @@
 			}
 , 			{
 				"name" : "mubu.hhmm.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "mubu.gmm.mxo",
 				"type" : "iLaX"
 			}
  ],
