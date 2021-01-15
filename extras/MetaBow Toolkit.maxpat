@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 830.0, 787.0 ],
+		"rect" : [ 35.0, 89.0, 1364.0, 777.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -339,11 +339,11 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 450.0, 660.0, 195.0, 90.0 ],
+					"patching_rect" : [ 450.0, 660.0, 198.0, 90.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 4,
 					"presentation_rect" : [ 165.0, 360.0, 271.0, 74.0 ],
-					"text" : "This section will introduce you to the higher level structure of this package and how the MetaBow abstractions can be used together.",
+					"text" : "This section explores abstractions responsible for the treatment and sanitisation of sensor data including smoothing techniques.",
 					"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
 				}
 
@@ -667,15 +667,15 @@
 					"fontname" : "Lato",
 					"fontsize" : 14.0,
 					"id" : "obj-40",
-					"linecount" : 10,
+					"linecount" : 7,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 240.0, 660.0, 199.0, 174.0 ],
+					"patching_rect" : [ 240.0, 660.0, 199.0, 124.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 7,
-					"presentation_rect" : [ 165.0, 195.0, 270.0, 124.0 ],
-					"text" : "This tutorial covers the design of the MetaBow toolkit framework and how to use it. It approaches this topic assuming you have minimal knowledge of Max , while presenting some of the more powerful programmatic possibilities of the abstraction suite.",
+					"presentation_linecount" : 5,
+					"presentation_rect" : [ 165.0, 195.0, 270.0, 90.0 ],
+					"text" : "The sensor data we receive is sometimes unruly and requires sanitisation , scaling or treatment in other ways. This section covers a range of abstractions for dealing with these issues.",
 					"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
 				}
 
@@ -698,13 +698,14 @@
 					"fontname" : "Lato",
 					"fontsize" : 18.0,
 					"id" : "obj-37",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 131.0, 660.0, 123.0, 28.0 ],
+					"patching_rect" : [ 131.0, 660.0, 123.0, 50.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 165.0, 165.0, 210.0, 28.0 ],
-					"text" : "Framework",
+					"text" : "Sensor Control",
 					"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
 				}
 

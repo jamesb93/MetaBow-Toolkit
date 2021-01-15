@@ -8,6 +8,7 @@ var _mode = 0; // 0 = learn, 1 = play
 // Patch
 var data_record = null;
 var audio_record = null;
+var mfcc_record = null;
 var xmm = null;
 var knn = null;
 var granular = null;
@@ -18,6 +19,7 @@ var mode_gate = null;
 function loadbang() {
 	data_record	   = this.patcher.getnamed("data_record")
 	audio_record   = this.patcher.getnamed("audio_record")
+	mfcc_record 	= this.patcher.getnamed("mfcc_record")
 	xmm   		   = this.patcher.getnamed("xmm")
 	knn 		   = this.patcher.getnamed("knn")
 	granular 	   = this.patcher.getnamed("granular")
@@ -29,9 +31,11 @@ function mode(v) {
 	if (v === "learn" || v === 0) {
 		_mode = 0
 		mode_gate.message(1)
+		granular.message("play", 0)
 	} else if (v === "play" || v === 1) {
 		_mode = 1
 		mode_gate.message(2)
+		granular.message("play", 1)
 		post("MetaBow TK: Ensure that your model is trained prior to playing.")
 	}
 }
@@ -71,7 +75,10 @@ function bufferindex(v) {
 }
 
 //xmm functions
-function train(v) {xmm.message("train")}
+function train(v) {
+	xmm.message("train")
+	knn.message("update")
+}
 
 function gaussians(v) {xmm.message("gaussians", v)}
 
