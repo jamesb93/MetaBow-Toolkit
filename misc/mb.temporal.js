@@ -10,6 +10,7 @@ var data_record = null;
 var audio_record = null;
 var xmm = null;
 var knn = null;
+var granular = null;
 var gesture_select = null;
 var mode_gate = null;
 
@@ -19,6 +20,7 @@ function loadbang() {
 	audio_record   = this.patcher.getnamed("audio_record")
 	xmm   		   = this.patcher.getnamed("xmm")
 	knn 		   = this.patcher.getnamed("knn")
+	granular 	   = this.patcher.getnamed("granular")
 	gesture_select = this.patcher.getnamed("select")
 	mode_gate 	   = this.patcher.getnamed("mode_gate")
 }

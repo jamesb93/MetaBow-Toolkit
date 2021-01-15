@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 35.0, 116.0, 1370.0, 749.0 ],
+		"rect" : [ 34.0, 115.0, 1372.0, 759.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -288,7 +288,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 903.25, 450.0, 50.0, 22.0 ]
+					"patching_rect" : [ 393.25, 465.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -310,7 +310,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 36.0, 78.0, 753.0, 531.0 ],
+						"rect" : [ 35.0, 116.0, 1370.0, 749.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -402,7 +402,7 @@
 						"bgfillcolor_proportion" : 0.39
 					}
 ,
-					"patching_rect" : [ 1110.0, 360.0, 59.0, 22.0 ],
+					"patching_rect" : [ 600.0, 390.0, 59.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -442,7 +442,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "list", "list", "list", "list" ],
-					"patching_rect" : [ 934.25, 405.0, 253.0, 21.0 ],
+					"patching_rect" : [ 424.25, 430.5, 253.0, 21.0 ],
 					"text" : "mubu.knn xmm-vocalization mfcc @radius 0 @k 1"
 				}
 
@@ -467,7 +467,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 885.0, 360.0, 216.0, 22.0 ],
+					"patching_rect" : [ 375.0, 390.0, 216.0, 22.0 ],
 					"text" : "mubu.xmm #0_grec movement mfcc",
 					"varname" : "xmm"
 				}
@@ -1170,7 +1170,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 180.0, 390.0, 165.0, 102.0 ],
 					"text" : "mubu.record #0_grec 2 movement @predef yes @samplerate 100 @matrixcols 2 @maxsize 240s @info gui \"interface multiwave, bounds -1. 1., shape lines\"",
-					"varname" : "record"
+					"varname" : "data_record"
 				}
 
 			}
@@ -1304,9 +1304,19 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-28", 0 ],
+					"midpoints" : [ 711.0, 222.0, 1020.0, 222.0, 1020.0, 153.0, 1044.5, 153.0 ],
+					"order" : 0,
+					"source" : [ "obj-3", 6 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"color" : [ 0.720947504043579, 0.0, 0.527119934558868, 1.0 ],
 					"destination" : [ "obj-59", 0 ],
 					"midpoints" : [ 711.0, 375.0, 189.5, 375.0 ],
+					"order" : 1,
 					"source" : [ "obj-3", 6 ]
 				}
 
@@ -1396,6 +1406,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-30", 0 ],
+					"midpoints" : [ 222.5, 375.0, 384.5, 375.0 ],
+					"source" : [ "obj-39", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-59", 0 ],
 					"midpoints" : [ 189.5, 309.0, 189.5, 309.0 ],
 					"source" : [ "obj-39", 0 ]
@@ -1412,6 +1430,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-35", 0 ],
+					"midpoints" : [ 609.5, 421.0, 435.0, 421.0, 435.0, 426.0, 433.75, 426.0 ],
 					"source" : [ "obj-42", 0 ]
 				}
 
