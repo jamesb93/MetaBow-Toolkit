@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 36.0, 79.0, 753.0, 531.0 ],
+		"rect" : [ 35.0, 117.0, 1364.0, 749.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,7 +37,82 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "Default Max 7",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"linecount" : 5,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 195.0, 195.0, 202.0, 74.0 ],
+					"presentation_linecount" : 5,
+					"text" : "This abstraction is designed to work with the MetaBow directly. It allows you to control the sampling rate or to switch the output of the sensor data on and off."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"fontname" : "Lato",
+					"fontsize" : 16.0,
+					"id" : "obj-4",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 195.0, 165.0, 202.0, 26.0 ],
+					"text" : "MetaBow Extractor"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 1,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-7",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "mb.bitalino.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 15.0, 165.0, 165.0, 151.0 ],
+					"varname" : "grec-bitalino[1]",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-8",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 195.0, 360.0, 202.0, 60.0 ],
+					"text" : "Early prototypes of the MetaBow were created with the r-IoT sensor. We've included an extractor for this sensor too."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"fontname" : "Lato",
+					"fontsize" : 16.0,
+					"id" : "obj-5",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 195.0, 330.0, 202.0, 26.0 ],
+					"text" : "Bitalino Extractor"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Lato",
 					"id" : "obj-3",
@@ -65,7 +140,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 15.0, 180.0, 165.0, 151.0 ],
+					"patching_rect" : [ 15.0, 330.0, 165.0, 151.0 ],
 					"varname" : "grec-bitalino",
 					"viewvisibility" : 1
 				}
@@ -89,15 +164,44 @@
  ],
 		"lines" : [  ],
 		"parameters" : 		{
+			"obj-6::obj-1" : [ "live.numbox[5]", "live.numbox[5]", 0 ],
+			"obj-6::obj-11" : [ "live.tab[1]", "live.tab[1]", 0 ],
 			"obj-6::obj-15" : [ "live.numbox[6]", "live.numbox[5]", 0 ],
 			"obj-6::obj-16" : [ "live.numbox[4]", "live.numbox", 0 ],
-			"obj-6::obj-1" : [ "live.numbox[5]", "live.numbox[5]", 0 ],
 			"obj-6::obj-17" : [ "live.text[5]", "live.text[1]", 0 ],
-			"obj-6::obj-11" : [ "live.tab[1]", "live.tab[1]", 0 ],
+			"obj-7::obj-1" : [ "live.numbox[9]", "live.numbox[5]", 0 ],
+			"obj-7::obj-11" : [ "live.tab[2]", "live.tab[1]", 0 ],
+			"obj-7::obj-15" : [ "live.numbox[7]", "live.numbox[5]", 0 ],
+			"obj-7::obj-16" : [ "live.numbox[8]", "live.numbox", 0 ],
+			"obj-7::obj-17" : [ "live.text[1]", "live.text[1]", 0 ],
 			"parameterbanks" : 			{
 
 			}
+,
+			"parameter_overrides" : 			{
+				"obj-7::obj-1" : 				{
+					"parameter_longname" : "live.numbox[9]"
+				}
+,
+				"obj-7::obj-11" : 				{
+					"parameter_longname" : "live.tab[2]"
+				}
+,
+				"obj-7::obj-15" : 				{
+					"parameter_longname" : "live.numbox[7]"
+				}
+,
+				"obj-7::obj-16" : 				{
+					"parameter_longname" : "live.numbox[8]"
+				}
+,
+				"obj-7::obj-17" : 				{
+					"parameter_longname" : "live.text[1]"
+				}
 
+			}
+,
+			"inherited_shortname" : 1
 		}
 ,
 		"dependency_cache" : [ 			{

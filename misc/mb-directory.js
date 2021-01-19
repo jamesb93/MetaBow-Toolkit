@@ -4,9 +4,9 @@ outlets = 1;
 var data = {
 	"0" : {
 		"name" : "Framework",
-		"blurb" : "This tutorial covers the design of the MetaBow toolkit framework and how to use it. It approaches this topic assuming you have minimal knowledge of Max, while presenting some of the more powerful programmatic possibilities of the abstraction suite.",
+		"blurb" : "How does this toolkit work?",
 		"patch" : "mb.framework",
-		"wywl" : "This section will introduce you to the higher level structure of this package and how the MetaBow abstractions can be used together."
+		"wywl" : " You will be introduced to the high level structure of this package and cover how the MetaBow abstractions can be used together."
 	},
 	"1" : {
         "name" : "Extractors",

@@ -60,7 +60,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 465.0, 555.0, 334.0, 28.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 165.0, 330.0, 335.0, 28.0 ],
+					"presentation_rect" : [ 165.0, 287.0, 335.0, 28.0 ],
 					"text" : "What will you learn?",
 					"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
 				}
@@ -342,8 +342,8 @@
 					"patching_rect" : [ 450.0, 660.0, 198.0, 90.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 4,
-					"presentation_rect" : [ 165.0, 360.0, 271.0, 74.0 ],
-					"text" : "This section explores abstractions responsible for the treatment and sanitisation of sensor data including smoothing techniques.",
+					"presentation_rect" : [ 165.0, 317.0, 271.0, 74.0 ],
+					"text" : "You will be introduced to the high level structure of this package and cover how the MetaBow abstractions can be used together.",
 					"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
 				}
 
@@ -667,15 +667,13 @@
 					"fontname" : "Lato",
 					"fontsize" : 14.0,
 					"id" : "obj-40",
-					"linecount" : 7,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 240.0, 660.0, 199.0, 124.0 ],
+					"patching_rect" : [ 240.0, 660.0, 200.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 5,
-					"presentation_rect" : [ 165.0, 195.0, 270.0, 90.0 ],
-					"text" : "The sensor data we receive is sometimes unruly and requires sanitisation , scaling or treatment in other ways. This section covers a range of abstractions for dealing with these issues.",
+					"presentation_rect" : [ 165.0, 195.0, 271.0, 23.0 ],
+					"text" : "How does this toolkit work?",
 					"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
 				}
 
@@ -698,14 +696,13 @@
 					"fontname" : "Lato",
 					"fontsize" : 18.0,
 					"id" : "obj-37",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 131.0, 660.0, 123.0, 50.0 ],
+					"patching_rect" : [ 131.0, 660.0, 123.0, 28.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 165.0, 165.0, 210.0, 28.0 ],
-					"text" : "Sensor Control",
+					"text" : "Framework",
 					"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
 				}
 
