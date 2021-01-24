@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 662.0, 787.0 ],
+		"rect" : [ 35.0, 117.0, 1364.0, 749.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,7 +37,8 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "Default Max 7",
-		"showontab" : 1,
+		"showrootpatcherontab" : 0,
+		"showontab" : 0,
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
@@ -56,7 +57,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 662.0, 761.0 ],
+						"rect" : [ 0.0, 26.0, 1364.0, 723.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -509,7 +510,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 105.0, 662.0, 761.0 ],
+						"rect" : [ 35.0, 143.0, 1364.0, 723.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -545,7 +546,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 225.0, 585.0, 202.0, 100.0 ],
+									"patching_rect" : [ 225.0, 405.0, 202.0, 100.0 ],
 									"text" : "This abstaction is designed to take the fuss out of isolating and smoothing the accelerometer data from the Meta Bow hardware. It possesses two different kinds of smoothing techniques and a control for the intensity of each."
 								}
 
@@ -559,7 +560,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 225.0, 555.0, 202.0, 26.0 ],
+									"patching_rect" : [ 225.0, 375.0, 202.0, 26.0 ],
 									"text" : "Magnetic Detector"
 								}
 
@@ -579,7 +580,7 @@
 									"numoutlets" : 1,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 15.0, 555.0, 195.0, 180.0 ],
+									"patching_rect" : [ 15.0, 375.0, 195.0, 180.0 ],
 									"viewvisibility" : 1
 								}
 
@@ -603,7 +604,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 240.0, 403.0, 285.0, 114.0 ],
+									"patching_rect" : [ 675.0, 208.0, 285.0, 114.0 ],
 									"text" : "Scaling is useful for taking an input number range and mapping it to an output number range. The abstraction can be programatically altered in real-time and features a learn mode where it maintains a memory of the minimum and maximum numbers it receives in the input stream till it is switched back to the play mode. This can be useful if you don't know the ranges to set beforehand."
 								}
 
@@ -629,7 +630,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 240.0, 375.0, 285.0, 26.0 ],
+									"patching_rect" : [ 675.0, 180.0, 285.0, 26.0 ],
 									"text" : "General Purpose Mapping and Scaling"
 								}
 
@@ -676,7 +677,7 @@
 									"numoutlets" : 1,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 15.0, 375.0, 210.0, 165.0 ],
+									"patching_rect" : [ 450.0, 180.0, 210.0, 165.0 ],
 									"viewvisibility" : 1
 								}
 
