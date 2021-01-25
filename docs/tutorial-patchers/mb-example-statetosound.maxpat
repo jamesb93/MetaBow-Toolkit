@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 35.0, 116.0, 1029.0, 749.0 ],
+		"rect" : [ 35.0, 116.0, 1364.0, 749.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -471,13 +471,7 @@
 								}
 
 							}
- ],
-						"bgfillcolor_type" : "gradient",
-						"bgfillcolor_color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
-						"bgfillcolor_color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"bgfillcolor_color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"bgfillcolor_angle" : 270.0,
-						"bgfillcolor_proportion" : 0.39
+ ]
 					}
 ,
 					"patching_rect" : [ 13.0, 540.0, 36.0, 22.0 ],
@@ -519,10 +513,11 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 15.0, 387.0, 45.0 ],
+					"patching_rect" : [ 15.0, 15.0, 525.0, 45.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 15.0, 15.0, 387.0, 45.0 ],
-					"text" : "MetaBow Processing - dist"
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 15.0, 15.0, 387.0, 83.0 ],
+					"text" : "MetaBow Example - State to Sound"
 				}
 
 			}

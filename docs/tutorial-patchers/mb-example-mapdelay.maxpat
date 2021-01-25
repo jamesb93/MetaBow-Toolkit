@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 35.0, 116.0, 1029.0, 749.0 ],
+		"rect" : [ 35.0, 116.0, 1364.0, 749.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -471,13 +471,7 @@
 								}
 
 							}
- ],
-						"bgfillcolor_type" : "gradient",
-						"bgfillcolor_color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
-						"bgfillcolor_color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"bgfillcolor_color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"bgfillcolor_angle" : 270.0,
-						"bgfillcolor_proportion" : 0.39
+ ]
 					}
 ,
 					"patching_rect" : [ 13.0, 540.0, 36.0, 22.0 ],
@@ -493,7 +487,7 @@
 					"maxclass" : "live.line",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 120.0, 630.0, 10.0 ]
+					"patching_rect" : [ 15.0, 102.0, 630.0, 10.0 ]
 				}
 
 			}
@@ -502,12 +496,12 @@
 					"fontname" : "Lato",
 					"fontsize" : 13.0,
 					"id" : "obj-4",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 62.0, 630.0, 53.0 ],
-					"text" : "Once there is clean and workable sensor data we have the opportunity to analyse it. The MetaBow Processing family of abstractions is responsible for performing such tasks such as gesture recognition and gesture mapping with this data."
+					"patching_rect" : [ 15.0, 62.0, 630.0, 38.0 ],
+					"text" : "Mapping data to effects can be an expressive mechanism when using the MetaBow. In this example, the accelerometer data is taken directly and mapped to two parameters of a simple feedback delay line."
 				}
 
 			}
@@ -519,11 +513,11 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 15.0, 435.0, 45.0 ],
+					"patching_rect" : [ 15.0, 15.0, 675.0, 45.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 15.0, 15.0, 387.0, 83.0 ],
-					"text" : "MetaBow Processing - delay"
+					"text" : "MetaBow Example - Mapping Data to an Effect"
 				}
 
 			}

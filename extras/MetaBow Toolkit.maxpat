@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 162.0, 572.0, 356.0 ],
+		"rect" : [ 35.0, 88.0, 1364.0, 777.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -68,7 +68,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 572.0, 330.0 ],
+						"rect" : [ 0.0, 26.0, 1364.0, 751.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1048,7 +1048,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 59.0, 188.0, 572.0, 330.0 ],
+						"rect" : [ 35.0, 114.0, 1364.0, 751.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1078,6 +1078,18 @@
 						"showontab" : 1,
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-7",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 225.0, 255.0, 41.0, 22.0 ],
+									"text" : "set $1"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"fontface" : 2,
 									"fontname" : "Lato",
@@ -1371,7 +1383,7 @@
 									"presentation" : 1,
 									"presentation_linecount" : 4,
 									"presentation_rect" : [ 165.0, 317.0, 271.0, 74.0 ],
-									"text" : "You will be introduced to the high level structure of this package and cover how the MetaBow abstractions can be used together.",
+									"text" : "Various examples are provided including mapping gestures to parameter control and state recognition as a way to trigger samples.",
 									"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
 								}
 
@@ -1695,13 +1707,15 @@
 									"fontname" : "Lato",
 									"fontsize" : 14.0,
 									"id" : "obj-40",
+									"linecount" : 5,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 240.0, 660.0, 200.0, 23.0 ],
+									"patching_rect" : [ 240.0, 660.0, 200.0, 90.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 165.0, 195.0, 271.0, 23.0 ],
-									"text" : "How does this toolkit work?",
+									"presentation_linecount" : 4,
+									"presentation_rect" : [ 165.0, 195.0, 271.0, 74.0 ],
+									"text" : "Learning from examples is a great way to situate your knowledge and to get to grips with how the MetaBow toolkit can work in practice",
 									"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
 								}
 
@@ -1730,7 +1744,7 @@
 									"patching_rect" : [ 131.0, 660.0, 123.0, 28.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 165.0, 165.0, 210.0, 28.0 ],
-									"text" : "Framework",
+									"text" : "Examples",
 									"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
 								}
 
@@ -1863,6 +1877,14 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-7", 0 ],
+									"order" : 2,
+									"source" : [ "obj-57", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-37", 0 ],
 									"midpoints" : [ 255.0, 486.0, 117.0, 486.0, 117.0, 654.0, 140.5, 654.0 ],
 									"order" : 3,
@@ -1892,6 +1914,13 @@
 									"destination" : [ "obj-87", 0 ],
 									"order" : 1,
 									"source" : [ "obj-60", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-27", 0 ],
+									"source" : [ "obj-7", 0 ]
 								}
 
 							}
