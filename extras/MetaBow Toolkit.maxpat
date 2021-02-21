@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 35.0, 88.0, 1364.0, 777.0 ],
+		"rect" : [ 35.0, 88.0, 999.0, 777.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -68,9 +68,9 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1364.0, 751.0 ],
+						"rect" : [ 35.0, 114.0, 999.0, 751.0 ],
 						"bglocked" : 0,
-						"openinpresentation" : 0,
+						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
 						"default_fontface" : 0,
 						"default_fontname" : "Arial",
@@ -99,14 +99,26 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-14",
-									"linecount" : 3,
+									"id" : "obj-9",
+									"linecount" : 55,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 60.0, 390.0, 50.0, 49.0 ],
-									"text" : "mb-example-mapdist"
+									"patching_rect" : [ 465.0, 450.0, 50.0, 746.0 ],
+									"text" : "Static gesture recognition allows you recognise when different learned 'poses' are happening as well as the balance of all of the trained poses. In this example, the 'likelihood' data for each pose is used to control the volume of different streams of signals, allowing you to dynamically control sound by interpolating different positions."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-6",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 255.0, 300.0, 41.0, 22.0 ],
+									"text" : "set $1"
 								}
 
 							}
@@ -139,30 +151,13 @@
 									"fontface" : 2,
 									"fontname" : "Lato",
 									"fontsize" : 18.0,
-									"id" : "obj-6",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 465.0, 495.0, 334.0, 28.0 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 165.0, 257.0, 335.0, 28.0 ],
-									"text" : "What will you learn?",
-									"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontface" : 2,
-									"fontname" : "Lato",
-									"fontsize" : 18.0,
 									"id" : "obj-5",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 136.25, 645.0, 334.0, 28.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 165.0, 135.0, 335.0, 28.0 ],
+									"presentation_rect" : [ 15.0, 225.0, 335.0, 28.0 ],
 									"text" : "Hover over a tutorial for more information.",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
@@ -388,43 +383,13 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-88",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 450.0, 555.0, 72.0, 22.0 ],
-									"text" : "prepend set"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Lato",
-									"fontsize" : 14.0,
-									"id" : "obj-87",
-									"linecount" : 5,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 450.0, 600.0, 198.0, 90.0 ],
-									"presentation" : 1,
-									"presentation_linecount" : 4,
-									"presentation_rect" : [ 165.0, 287.0, 271.0, 74.0 ],
-									"text" : "You will be introduced to the high level structure of this package and cover how the MetaBow abstractions can be used together.",
-									"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-84",
 									"maxclass" : "newobj",
-									"numinlets" : 5,
-									"numoutlets" : 5,
-									"outlettype" : [ "", "", "", "", "" ],
-									"patching_rect" : [ 131.0, 465.0, 161.0, 22.0 ],
-									"text" : "route patch name blurb wywl"
+									"numinlets" : 4,
+									"numoutlets" : 4,
+									"outlettype" : [ "", "", "", "" ],
+									"patching_rect" : [ 131.0, 465.0, 132.0, 22.0 ],
+									"text" : "route patch name blurb"
 								}
 
 							}
@@ -723,15 +688,15 @@
 									"fontname" : "Lato",
 									"fontsize" : 14.0,
 									"id" : "obj-40",
-									"linecount" : 4,
+									"linecount" : 12,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 240.0, 600.0, 200.0, 74.0 ],
+									"patching_rect" : [ 240.0, 600.0, 200.0, 208.0 ],
 									"presentation" : 1,
-									"presentation_linecount" : 3,
-									"presentation_rect" : [ 165.0, 165.0, 271.0, 57.0 ],
-									"text" : "Powerful results can come from mapping raw data in the right way to sound manipulation.",
+									"presentation_linecount" : 5,
+									"presentation_rect" : [ 15.0, 277.0, 525.0, 90.0 ],
+									"text" : "Static gesture recognition allows you recognise when different learned 'poses' are happening as well as the balance of all of the trained poses. In this example , the 'likelihood' data for each pose is used to control the volume of different streams of signals , allowing you to dynamically control sound by interpolating different positions.",
 									"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
 								}
 
@@ -754,13 +719,14 @@
 									"fontname" : "Lato",
 									"fontsize" : 18.0,
 									"id" : "obj-37",
+									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 131.0, 600.0, 123.0, 28.0 ],
+									"patching_rect" : [ 131.0, 600.0, 123.0, 71.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 165.0, 135.0, 210.0, 28.0 ],
-									"text" : "Data Mapping",
+									"presentation_rect" : [ 15.0, 225.0, 315.0, 28.0 ],
+									"text" : "Connecting State To Sound",
 									"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
 								}
 
@@ -789,15 +755,18 @@
 									"id" : "obj-27",
 									"margin" : 0,
 									"maxclass" : "tab",
+									"mode" : 1,
+									"multiline" : 0,
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "int", "", "" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 15.0, 135.0, 135.0, 195.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 15.0, 135.0, 135.0, 375.0 ],
+									"presentation_rect" : [ 15.0, 135.0, 525.0, 60.0 ],
 									"rounded" : 3.0,
-									"tabs" : [ "Data Mapping" ]
+									"tabs" : [ "Data Mapping", "State to Sound", "Physical Gesture to Sound Gesture" ],
+									"valign" : 0
 								}
 
 							}
@@ -910,8 +879,16 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-60", 0 ],
+									"destination" : [ "obj-6", 0 ],
 									"order" : 1,
+									"source" : [ "obj-57", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-60", 0 ],
+									"order" : 2,
 									"source" : [ "obj-57", 1 ]
 								}
 
@@ -926,9 +903,16 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-27", 0 ],
+									"source" : [ "obj-6", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-37", 0 ],
 									"midpoints" : [ 255.0, 426.0, 117.0, 426.0, 117.0, 594.0, 140.5, 594.0 ],
-									"order" : 3,
+									"order" : 1,
 									"source" : [ "obj-60", 0 ]
 								}
 
@@ -937,39 +921,14 @@
 								"patchline" : 								{
 									"destination" : [ "obj-40", 0 ],
 									"midpoints" : [ 255.0, 450.0, 294.0, 450.0, 294.0, 504.0, 249.5, 504.0 ],
-									"order" : 2,
-									"source" : [ "obj-60", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-6", 0 ],
 									"order" : 0,
 									"source" : [ "obj-60", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-87", 0 ],
-									"order" : 1,
-									"source" : [ "obj-60", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-14", 1 ],
-									"order" : 0,
-									"source" : [ "obj-71", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-53", 0 ],
-									"order" : 1,
 									"source" : [ "obj-71", 0 ]
 								}
 
@@ -991,6 +950,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-39", 0 ],
+									"order" : 1,
 									"source" : [ "obj-84", 2 ]
 								}
 
@@ -1004,15 +964,9 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-88", 0 ],
-									"source" : [ "obj-84", 3 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-87", 0 ],
-									"source" : [ "obj-88", 0 ]
+									"destination" : [ "obj-9", 1 ],
+									"order" : 0,
+									"source" : [ "obj-84", 2 ]
 								}
 
 							}
@@ -1048,9 +1002,9 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 35.0, 114.0, 1364.0, 751.0 ],
+						"rect" : [ 0.0, 26.0, 999.0, 751.0 ],
 						"bglocked" : 0,
-						"openinpresentation" : 0,
+						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
 						"default_fontface" : 0,
 						"default_fontname" : "Arial",
@@ -1100,7 +1054,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 465.0, 555.0, 334.0, 28.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 165.0, 287.0, 335.0, 28.0 ],
+									"presentation_rect" : [ 165.0, 332.0, 335.0, 28.0 ],
 									"text" : "What will you learn?",
 									"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
 								}
@@ -1109,17 +1063,17 @@
 , 							{
 								"box" : 								{
 									"fontname" : "Lato",
-									"fontsize" : 13.0,
+									"fontsize" : 14.0,
 									"id" : "obj-3",
-									"linecount" : 5,
+									"linecount" : 8,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 15.0, 62.0, 570.0, 84.0 ],
+									"patching_rect" : [ 15.0, 62.0, 589.0, 141.0 ],
 									"presentation" : 1,
-									"presentation_linecount" : 5,
-									"presentation_rect" : [ 15.0, 62.0, 570.0, 84.0 ],
-									"text" : "The MetaBow Toolkit is a set of abstractions designed around the \"MetaBow\" a hardware violin bow sensor developed at Hong Kong Baptist University. Below is the entry point to a set of tutorials and reference materials for understanding how these abstractions can be put into practice. Navigate between the sections as you see fit, but I encourage you to move in the order presented top to bottom."
+									"presentation_linecount" : 8,
+									"presentation_rect" : [ 15.0, 62.0, 589.0, 141.0 ],
+									"text" : "The MetaBow Toolkit is a set of abstractions designed around the \"MetaBow\" a hardware violin bow sensor developed at Hong Kong Baptist University.\n\nHow do you navigate through this package?\n\nWork your way through each section, beginning with framework, extractors, sensor control and then processing to see the various abstractions in an order that makes sense. Make sure you to not only look at the abstractions but "
 								}
 
 							}
@@ -1134,7 +1088,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 136.25, 705.0, 334.0, 28.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 165.0, 165.0, 335.0, 28.0 ],
+									"presentation_rect" : [ 165.0, 210.0, 335.0, 28.0 ],
 									"text" : "Hover over a tutorial for more information.",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
@@ -1382,8 +1336,8 @@
 									"patching_rect" : [ 450.0, 660.0, 198.0, 90.0 ],
 									"presentation" : 1,
 									"presentation_linecount" : 4,
-									"presentation_rect" : [ 165.0, 317.0, 271.0, 74.0 ],
-									"text" : "Various examples are provided including mapping gestures to parameter control and state recognition as a way to trigger samples.",
+									"presentation_rect" : [ 165.0, 362.0, 271.0, 74.0 ],
+									"text" : "This section explores abstractions responsible for the treatment and sanitisation of sensor data including smoothing techniques.",
 									"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
 								}
 
@@ -1707,15 +1661,15 @@
 									"fontname" : "Lato",
 									"fontsize" : 14.0,
 									"id" : "obj-40",
-									"linecount" : 5,
+									"linecount" : 7,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 240.0, 660.0, 200.0, 90.0 ],
+									"patching_rect" : [ 240.0, 660.0, 200.0, 124.0 ],
 									"presentation" : 1,
-									"presentation_linecount" : 4,
-									"presentation_rect" : [ 165.0, 195.0, 271.0, 74.0 ],
-									"text" : "Learning from examples is a great way to situate your knowledge and to get to grips with how the MetaBow toolkit can work in practice",
+									"presentation_linecount" : 5,
+									"presentation_rect" : [ 165.0, 240.0, 271.0, 90.0 ],
+									"text" : "The sensor data we receive is sometimes unruly and requires sanitisation , scaling or treatment in other ways. This section covers a range of abstractions for dealing with these issues.",
 									"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
 								}
 
@@ -1738,13 +1692,14 @@
 									"fontname" : "Lato",
 									"fontsize" : 18.0,
 									"id" : "obj-37",
+									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 131.0, 660.0, 123.0, 28.0 ],
+									"patching_rect" : [ 131.0, 660.0, 123.0, 50.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 165.0, 165.0, 210.0, 28.0 ],
-									"text" : "Examples",
+									"presentation_rect" : [ 165.0, 210.0, 210.0, 28.0 ],
+									"text" : "Sensor Control",
 									"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
 								}
 
@@ -1779,9 +1734,9 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 15.0, 195.0, 135.0, 195.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 15.0, 165.0, 135.0, 375.0 ],
+									"presentation_rect" : [ 15.0, 210.0, 135.0, 375.0 ],
 									"rounded" : 3.0,
-									"tabs" : [ "Framework", "Extractors", "Sensor Control", "Processing", "Examples" ]
+									"tabs" : [ "Framework", "Extractors", "Sensor Control", "Processing" ]
 								}
 
 							}
