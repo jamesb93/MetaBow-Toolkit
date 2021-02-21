@@ -27,7 +27,6 @@ function smoothing(v) {
 }
 
 function mode(v) {
-	// Mute the smoothing amount
 	if (v == 0) {
 		smooth_amount.message("active", 0)
 	} else {
