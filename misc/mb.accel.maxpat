@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 192.0, 213.0, 753.0, 531.0 ],
+		"rect" : [ 35.0, 116.0, 1370.0, 749.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -45,8 +45,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 15.0, 75.0, 315.0, 22.0 ],
-					"text" : "route data"
+					"patching_rect" : [ 15.0, 75.0, 115.0, 22.0 ],
+					"text" : "route accelerometer"
 				}
 
 			}
