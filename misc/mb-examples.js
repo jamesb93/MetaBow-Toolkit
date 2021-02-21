@@ -4,28 +4,21 @@ outlets = 1;
 var data = {
 	"0" : {
 		"name" : "Data Mapping",
-		"blurb" : "Powerful results can come from mapping raw data in the right way to sound manipulation.",
+		"blurb" : "Powerful results can come from mapping raw data to sound manipulation without any machine learning or complex recognition required. This is sometimes a more manual way of doing things but can be a simple way of exploring how physical gestures can be mapped onto sonic possibilities.",
 		"patch" : "mb-example-mapdelay",
 		"wywl" : ""
 	},
 	"1" : {
         "name" : "Connecting State To Sound",
-        "blurb" : "Gesture recognition can be used in lots of ways. This example demonstrates using gesture recognition to trigger the playback of sounds.",
-		"patch" : "mb-example-soundtostate",
+        "blurb" : "Static gesture recognition allows you recognise when different learned 'poses' are happening as well as the balance of all of the trained poses. In this example, the 'likelihood' data for each pose is used to control the volume of different streams of signals, allowing you to dynamically control sound by interpolating different positions.",
+		"patch" : "mb-example-statetosound",
 		"wywl" : ""
     },
     "2" : {
-        "name" : "Sensor Control",
-        "blurb" : "The sensor data we receive is sometimes unruly and requires sanitisation, scaling or treatment in other ways. This section covers a range of abstractions for dealing with these issues.",
-		"patch" : "mb.sensor-control",
-		"wywl" : "This section explores abstractions responsible for the treatment and sanitisation of sensor data including smoothing techniques."
-    },
-    "3" : {
-        "name" : "Processing",
-        "blurb" : "Processing is an umbrella term capturing a number of applications involving our sensor data. For example, this can include continuous and discrete gesture recognition or simple 1-to-1 mapping.",
-		"patch" : "mb.processing",
-		"wywl" : "The processing abstractions perform more complex actions, where data is analysed both off-line and in real-time for gesture recognition and other purposes."
-
+        "name" : "Physical Gesture to Sound Gesture",
+        "blurb" : "Using the continuous gesture recognition abstraction you can map the temporal aspects of a gesture to the generation or playback of sound",
+		"patch" : "mb-example-gesturetogesture",
+		"wywl" : ""
     }
 }
 
