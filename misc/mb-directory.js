@@ -26,13 +26,7 @@ var data = {
 		"patch" : "mb.processing",
 		"wywl" : "The processing abstractions perform more complex actions, where data is analysed both off-line and in real-time for gesture recognition and other purposes."
 
-    },
-	"4" : {
-		"name" : "Examples",
-		"blurb" : "Learning from examples is a great way to situate your knowledge and to get to grips with how the MetaBow toolkit can work in practice",
-		"patch" : "mb-example-landing",
-		"wywl" : "Various examples are provided including mapping gestures to parameter control and state recognition as a way to trigger samples."
-	}
+    }
 }
 
 function msg_int(v) {
