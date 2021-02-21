@@ -1,7 +1,7 @@
 autowatch = 1
 
 // Internal State
-var state = new Dict()
+var id = -1;
 var _numbuffers = 2;
 var _mode = 0; // 0 = learn, 1 = play
 
@@ -10,13 +10,21 @@ var record = null;
 var hhmm = null;
 var gesture_select = null;
 var mode_gate = null;
+var mubu = null;
 
+function set_id(v) {id = v}
 
 function loadbang() {
 	record  	   = this.patcher.getnamed("record")
 	hhmm   		   = this.patcher.getnamed("hhmm")
 	gesture_select = this.patcher.getnamed("select")
 	mode_gate 	   = this.patcher.getnamed("mode_gate")
+
+	if (mubu === null) {
+		mubu = new MubuJS(id+"_grec");
+	} else {
+		mubu.refer(id+"_grec");
+	}
 }
 
 function mode(v) {
@@ -49,7 +57,8 @@ function numbuffers(v) {
 	var l = []
 	for (i=0; i < v; i++) {l.push(i)}
 	gesture_select.message("_parameter_range", l)
-	_numbuffers = v
+	_numbuffers = v;
+	mubu.numbuffers = v;
 }
 
 function bufferindex(v) {
@@ -60,7 +69,7 @@ function bufferindex(v) {
 		idx = v
 	}
 	gesture_select.message("set", idx)
-	record.message("bufferindex", idx)
+	record.message("bufferindex", idx+1)
 }
 
 // hhmm functions
@@ -69,12 +78,3 @@ function train(v) {hhmm.message("train")}
 function states(v) {hhmm.message("states", v)}
 
 function regularization(v) {hhmm.message("regularization", v)}
-
-
-// Dictionaries
-function set_id(v) {
-	state.name = "mb-" + String(v)
-	outlet(0, state)
-}
-
-
