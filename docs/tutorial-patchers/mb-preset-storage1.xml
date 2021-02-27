@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<pattrstorage name = "u816004656">
+	<slot number = "1">
+		<pattr name = "carrier" value = "220" />
+		<pattr name = "harmonicity" value = "199." />
+		<pattr name = "index" value = "42." />
+	</slot>
+	<slot number = "2">
+		<pattr name = "carrier" value = "302" />
+		<pattr name = "harmonicity" value = "199." />
+		<pattr name = "index" value = "2." />
+	</slot>
+	<slot number = "3">
+		<pattr name = "carrier" value = "727" />
+		<pattr name = "harmonicity" value = "-2." />
+		<pattr name = "index" value = "2." />
+	</slot>
+</pattrstorage>
+
