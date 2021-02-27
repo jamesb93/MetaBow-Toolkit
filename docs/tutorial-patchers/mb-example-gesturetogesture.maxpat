@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 35.0, 116.0, 1370.0, 749.0 ],
+		"rect" : [ 35.0, 116.0, 1266.0, 749.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,7 @@
 		"subpatcher_template" : "Default Max 7",
 		"showontab" : 1,
 		"assistshowspatchername" : 0,
+		"title" : "MetaBow Toolkit Example - Gesture to Gesture",
 		"boxes" : [ 			{
 				"box" : 				{
 					"fontname" : "Lato",
@@ -74,7 +75,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 810.0, 181.0, 423.0, 222.0 ],
+					"patching_rect" : [ 810.0, 181.0, 426.0, 222.0 ],
 					"text" : "We can use both the \"likelihood\" calculation AND the \"state\" of the recognised gesture to scrub through different sounds that are associated to gestures.\n\nIn this example, you will record two different gestures and train a mubu.hhmm object to recognise which gesture is being played and how confident it is which gesture it is (\"likelihood\") and how advanced through that gesture you are (\"state\"). The likelihood controls the volume balance between two different sounds, jongly.aif and duduk.aif that are being granulated with a granular synthesiser. The position of those granular synthesisers is controlled by the state.\n\nIn effect, this makes the selection of a gesture a powerful tool for controlling which sound is playing. In addition to this moving between different parts of a gesture can help you to create timbral and material variation in the source of the granular synthesiser."
 				}
 
@@ -521,7 +522,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 35.0, 116.0, 1370.0, 749.0 ],
+						"rect" : [ 35.0, 116.0, 1266.0, 749.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 35.0, 116.0, 1370.0, 749.0 ],
+		"rect" : [ 35.0, 116.0, 1266.0, 749.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,7 @@
 		"subpatcher_template" : "Default Max 7",
 		"showontab" : 1,
 		"assistshowspatchername" : 0,
+		"title" : "MetaBow Toolkit Example - Delay Map",
 		"boxes" : [ 			{
 				"box" : 				{
 					"fontname" : "Lato",

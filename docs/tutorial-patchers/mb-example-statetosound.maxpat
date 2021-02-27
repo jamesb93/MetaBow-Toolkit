@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 35.0, 116.0, 1370.0, 749.0 ],
+		"rect" : [ 35.0, 116.0, 1266.0, 749.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,7 @@
 		"subpatcher_template" : "Default Max 7",
 		"showontab" : 1,
 		"assistshowspatchername" : 0,
+		"title" : "MetaBow Toolkit Example - State to Sound",
 		"boxes" : [ 			{
 				"box" : 				{
 					"fontname" : "Lato",
@@ -74,7 +75,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 840.0, 181.0, 423.0, 122.0 ],
+					"patching_rect" : [ 840.0, 185.5, 399.0, 122.0 ],
 					"text" : "We can use both the \"likelihood\" to calculate the balance between different statically recognised \"poses\" or \"gestures\".\n\nIn this example, you will record two different gestures and train a mubu.gmm object to recognise which gesture is being played and how confident it is which gesture it is (\"likelihood\"). The likelihood controls the volume balance between two different sounds, jongly.aif and duduk.aif that are being granulated that are  being looped."
 				}
 
