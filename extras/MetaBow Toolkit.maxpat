@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 35.0, 88.0, 999.0, 777.0 ],
+		"rect" : [ 35.0, 116.0, 1370.0, 749.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -68,7 +68,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 35.0, 114.0, 999.0, 751.0 ],
+						"rect" : [ 0.0, 26.0, 1370.0, 723.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -100,13 +100,13 @@
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-9",
-									"linecount" : 55,
+									"linecount" : 25,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 465.0, 450.0, 50.0, 746.0 ],
-									"text" : "Static gesture recognition allows you recognise when different learned 'poses' are happening as well as the balance of all of the trained poses. In this example, the 'likelihood' data for each pose is used to control the volume of different streams of signals, allowing you to dynamically control sound by interpolating different positions."
+									"patching_rect" : [ 465.0, 450.0, 60.0, 344.0 ],
+									"text" : "Raw accelerometer values can be mapped onto arbitrary presets. This opens up the possibility of using gesture to navgiate the unknown sounds between some stored known ones."
 								}
 
 							}
@@ -688,15 +688,15 @@
 									"fontname" : "Lato",
 									"fontsize" : 14.0,
 									"id" : "obj-40",
-									"linecount" : 12,
+									"linecount" : 7,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 240.0, 600.0, 200.0, 208.0 ],
+									"patching_rect" : [ 240.0, 600.0, 200.0, 124.0 ],
 									"presentation" : 1,
-									"presentation_linecount" : 5,
-									"presentation_rect" : [ 15.0, 277.0, 525.0, 90.0 ],
-									"text" : "Static gesture recognition allows you recognise when different learned 'poses' are happening as well as the balance of all of the trained poses. In this example , the 'likelihood' data for each pose is used to control the volume of different streams of signals , allowing you to dynamically control sound by interpolating different positions.",
+									"presentation_linecount" : 3,
+									"presentation_rect" : [ 15.0, 277.0, 525.0, 57.0 ],
+									"text" : "Raw accelerometer values can be mapped onto arbitrary presets. This opens up the possibility of using gesture to navgiate the unknown sounds between some stored known ones.",
 									"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
 								}
 
@@ -726,7 +726,7 @@
 									"patching_rect" : [ 131.0, 600.0, 123.0, 71.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 15.0, 225.0, 315.0, 28.0 ],
-									"text" : "Connecting State To Sound",
+									"text" : "Preset Interpolation Exploring 1",
 									"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
 								}
 
@@ -763,9 +763,10 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 15.0, 135.0, 135.0, 195.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 15.0, 135.0, 525.0, 60.0 ],
+									"presentation_rect" : [ 15.0, 135.0, 870.0, 60.0 ],
 									"rounded" : 3.0,
-									"tabs" : [ "Data Mapping", "State to Sound", "Physical Gesture to Sound Gesture" ],
+									"spacing_y" : 0.0,
+									"tabs" : [ "Data Mapping", "State to Sound", "Physical Gesture to Sound Gesture", "Preset Interpolation 1", "Preset Interpolation 2" ],
 									"valign" : 0
 								}
 
@@ -1002,7 +1003,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 999.0, 751.0 ],
+						"rect" : [ 35.0, 142.0, 1370.0, 723.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
