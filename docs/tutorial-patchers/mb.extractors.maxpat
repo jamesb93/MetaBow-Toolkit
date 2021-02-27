@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 35.0, 117.0, 1364.0, 749.0 ],
+		"rect" : [ 35.0, 116.0, 1371.0, 749.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,7 @@
 		"style" : "",
 		"subpatcher_template" : "Default Max 7",
 		"assistshowspatchername" : 0,
+		"title" : "MetaBow Toolkit - Extractors",
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-1",
@@ -45,8 +46,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 195.0, 195.0, 202.0, 74.0 ],
-					"presentation_linecount" : 5,
+					"patching_rect" : [ 195.0, 195.0, 207.0, 74.0 ],
 					"text" : "This abstraction is designed to work with the MetaBow directly. It allows you to control the sampling rate or to switch the output of the sensor data on and off."
 				}
 
@@ -179,6 +179,18 @@
 			}
 ,
 			"parameter_overrides" : 			{
+				"obj-6::obj-11" : 				{
+					"parameter_longname" : "live.tab[1]"
+				}
+,
+				"obj-6::obj-16" : 				{
+					"parameter_longname" : "live.numbox[4]"
+				}
+,
+				"obj-6::obj-17" : 				{
+					"parameter_longname" : "live.text[5]"
+				}
+,
 				"obj-7::obj-1" : 				{
 					"parameter_longname" : "live.numbox[9]"
 				}

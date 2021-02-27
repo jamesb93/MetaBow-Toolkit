@@ -39,53 +39,8 @@
 		"subpatcher_template" : "Default Max 7",
 		"showontab" : 1,
 		"assistshowspatchername" : 0,
+		"title" : "MetaBow Toolkit - Processing",
 		"boxes" : [ 			{
-				"box" : 				{
-					"id" : "obj-13",
-					"linecount" : 3,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1005.0, 435.0, 317.0, 47.0 ],
-					"text" : "Temporal Mapping helps you map gestures to sounds more diretctly without having to add code around the continuous gesture recognition abstraction."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 1,
-					"fontname" : "Lato",
-					"fontsize" : 16.0,
-					"id" : "obj-14",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1005.0, 405.0, 285.0, 26.0 ],
-					"text" : "Temporal Mapping"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 1,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-15",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "mb.temporal.maxpat",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "", "signal" ],
-					"patching_rect" : [ 675.0, 405.0, 315.0, 255.0 ],
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"id" : "obj-6",
 					"linecount" : 8,
@@ -123,9 +78,9 @@
 					"maxclass" : "bpatcher",
 					"name" : "mb.static.maxpat",
 					"numinlets" : 1,
-					"numoutlets" : 2,
+					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "", "" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 15.0, 405.0, 315.0, 255.0 ],
 					"viewvisibility" : 1
 				}
@@ -195,9 +150,9 @@
 					"maxclass" : "bpatcher",
 					"name" : "mb.continuous.maxpat",
 					"numinlets" : 1,
-					"numoutlets" : 2,
+					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "", "" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 15.0, 135.0, 315.0, 255.0 ],
 					"viewvisibility" : 1
 				}
@@ -221,11 +176,6 @@
  ],
 		"lines" : [  ],
 		"parameters" : 		{
-			"obj-15::obj-17" : [ "live.text[9]", "live.text[1]", 0 ],
-			"obj-15::obj-78" : [ "live.text[12]", "live.text[2]", 0 ],
-			"obj-15::obj-79" : [ "live.text[13]", "live.text[2]", 0 ],
-			"obj-15::obj-8" : [ "live.text[11]", "live.text", 0 ],
-			"obj-15::obj-91" : [ "live.tab[2]", "live.tab", 0 ],
 			"obj-1::obj-17" : [ "live.text[1]", "live.text[1]", 0 ],
 			"obj-1::obj-78" : [ "live.text[2]", "live.text[2]", 0 ],
 			"obj-1::obj-79" : [ "live.text[3]", "live.text[2]", 0 ],
@@ -241,26 +191,6 @@
 			}
 ,
 			"parameter_overrides" : 			{
-				"obj-15::obj-17" : 				{
-					"parameter_longname" : "live.text[9]"
-				}
-,
-				"obj-15::obj-78" : 				{
-					"parameter_longname" : "live.text[12]"
-				}
-,
-				"obj-15::obj-79" : 				{
-					"parameter_longname" : "live.text[13]"
-				}
-,
-				"obj-15::obj-8" : 				{
-					"parameter_longname" : "live.text[11]"
-				}
-,
-				"obj-15::obj-91" : 				{
-					"parameter_longname" : "live.tab[2]"
-				}
-,
 				"obj-1::obj-91" : 				{
 					"parameter_invisible" : 0,
 					"parameter_modmode" : 0,
@@ -328,20 +258,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "mb.temporal.maxpat",
-				"bootpath" : "~/Cloud/Consulting/GestureRecognition/MetaBow Toolkit/misc",
-				"patcherrelativepath" : "../../misc",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "mb.temporal.js",
-				"bootpath" : "~/Cloud/Consulting/GestureRecognition/MetaBow Toolkit/misc",
-				"patcherrelativepath" : "../../misc",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "mubu.mxo",
 				"type" : "iLaX"
 			}
@@ -359,34 +275,6 @@
 			}
 , 			{
 				"name" : "mubu.gmm.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.xmm.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.knn.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.granular~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "pipo~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "pipo.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.mxo",
 				"type" : "iLaX"
 			}
  ],

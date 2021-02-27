@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 35.0, 117.0, 964.0, 749.0 ],
+		"rect" : [ 35.0, 116.0, 1266.0, 749.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,7 @@
 		"showrootpatcherontab" : 0,
 		"showontab" : 0,
 		"assistshowspatchername" : 0,
+		"title" : "MetaBow Toolkit - Framework",
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-6",
@@ -57,7 +58,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 964.0, 723.0 ],
+						"rect" : [ 0.0, 26.0, 1266.0, 723.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -141,7 +142,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 210.0, 195.0, 162.0, 53.0 ],
-									"presentation_linecount" : 3,
 									"text" : "- mb.continuous\n- mb.static\n- mb.temporal"
 								}
 
@@ -253,7 +253,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 964.0, 723.0 ],
+						"rect" : [ 0.0, 26.0, 1266.0, 723.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -554,7 +554,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 964.0, 723.0 ],
+						"rect" : [ 0.0, 26.0, 1266.0, 723.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -857,7 +857,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 35.0, 117.0, 1364.0, 749.0 ],
+						"rect" : [ 35.0, 142.0, 1266.0, 723.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -886,7 +886,7 @@
 						"subpatcher_template" : "Default Max 7",
 						"showontab" : 1,
 						"assistshowspatchername" : 0,
-						"visible" : 1,
+						"title" : "MetaBow Toolkit - Framework",
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-12",
