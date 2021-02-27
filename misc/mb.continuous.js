@@ -78,3 +78,16 @@ function train(v) {hhmm.message("train")}
 function states(v) {hhmm.message("states", v)}
 
 function regularization(v) {hhmm.message("regularization", v)}
+	
+// Data read/write
+function read(path) {
+	if (mubu !== null) {
+		mubu.readall();
+	} else {
+		error("MuBu object not bound")
+	}
+}
+
+function write(path) {
+	post(path)
+}

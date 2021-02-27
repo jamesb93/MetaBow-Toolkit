@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 652.0, 787.0 ],
+		"rect" : [ 35.0, 144.0, 1371.0, 721.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,7 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "Default Max 7",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-4",
@@ -103,12 +104,12 @@
 					"presentation_rect" : [ 15.0, 15.0, 45.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_longname" : "live.dial[2]",
 							"parameter_mmax" : 100.0,
+							"parameter_mmin" : 3.0,
 							"parameter_shortname" : "Smoothing",
 							"parameter_type" : 0,
-							"parameter_unitstyle" : 0,
-							"parameter_mmin" : 3.0,
-							"parameter_longname" : "live.dial"
+							"parameter_unitstyle" : 0
 						}
 
 					}
@@ -132,12 +133,12 @@
 					"presentation_rect" : [ 11.5, 65.0, 52.0, 64.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "none", "average", "median" ],
+							"parameter_longname" : "live.tab[4]",
 							"parameter_mmax" : 2,
 							"parameter_shortname" : "live.tab",
-							"parameter_enum" : [ "none", "average", "median" ],
 							"parameter_type" : 2,
-							"parameter_unitstyle" : 0,
-							"parameter_longname" : "live.tab[2]"
+							"parameter_unitstyle" : 9
 						}
 
 					}
@@ -155,7 +156,7 @@
 					"outlettype" : [ "", "float", "" ],
 					"patching_rect" : [ 227.75, 246.0, 163.0, 22.0 ],
 					"text" : "pipo median @median.size 0",
-					"varname" : "median"
+					"varname" : "me"
 				}
 
 			}
@@ -168,7 +169,7 @@
 					"outlettype" : [ "", "float", "" ],
 					"patching_rect" : [ 60.0, 246.0, 163.0, 22.0 ],
 					"text" : "pipo mvavrg @mvavrg.size 0",
-					"varname" : "mvavrg"
+					"varname" : "av"
 				}
 
 			}
@@ -189,7 +190,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-2",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -201,7 +202,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-1",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -304,29 +305,7 @@
 				}
 
 			}
- ],
-		"parameters" : 		{
-			"obj-3" : [ "live.tab[2]", "live.tab", 0 ],
-			"obj-15" : [ "live.dial", "Smoothing", 0 ],
-			"parameterbanks" : 			{
-
-			}
-
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "mb.subsmoother.js",
-				"bootpath" : "~/Cloud/Consulting/GestureRecognition/MetaBow Toolkit/misc",
-				"patcherrelativepath" : ".",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "pipo.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }

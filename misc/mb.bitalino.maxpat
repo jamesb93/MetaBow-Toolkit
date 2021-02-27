@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 35.0, 116.0, 1920.0, 1289.0 ],
+		"rect" : [ 35.0, 116.0, 1371.0, 749.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -606,18 +606,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-9",
-					"maxclass" : "live.comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 810.0, 615.0, 270.0, 18.0 ],
-					"text" : "Created by James Bradbury | jamesbradbury93@gmail.com",
-					"textjustification" : 0
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-8",
 					"maxclass" : "live.comment",
 					"numinlets" : 1,
@@ -745,8 +733,8 @@
 					"numinlets" : 5,
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 150.0, 75.0, 249.0, 22.0 ],
-					"text" : "route status device sample port"
+					"patching_rect" : [ 150.0, 75.0, 175.0, 22.0 ],
+					"text" : "route status sample device port"
 				}
 
 			}
@@ -818,7 +806,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_longname" : "live.text[5]",
+							"parameter_longname" : "live.text[1]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text[1]",
 							"parameter_type" : 2
@@ -1011,7 +999,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"midpoints" : [ 332.0, 114.0, 360.5, 114.0 ],
+					"midpoints" : [ 276.5, 114.0, 360.5, 114.0 ],
 					"source" : [ "obj-3", 3 ]
 				}
 
@@ -1027,7 +1015,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
-					"midpoints" : [ 274.5, 99.0, 274.5, 99.0 ],
+					"midpoints" : [ 237.5, 120.0, 270.0, 120.0, 270.0, 189.0, 274.5, 189.0 ],
 					"source" : [ "obj-3", 2 ]
 				}
 
@@ -1035,7 +1023,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-16", 0 ],
-					"midpoints" : [ 217.0, 225.0, 200.5, 225.0 ],
+					"midpoints" : [ 198.5, 99.0, 200.5, 99.0 ],
 					"source" : [ "obj-3", 1 ]
 				}
 
