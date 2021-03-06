@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 35.0, 116.0, 1370.0, 749.0 ],
+		"rect" : [ 35.0, 88.0, 1239.0, 927.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -68,7 +68,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1370.0, 723.0 ],
+						"rect" : [ 35.0, 114.0, 1239.0, 901.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -100,13 +100,13 @@
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-9",
-									"linecount" : 25,
+									"linecount" : 10,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 465.0, 450.0, 60.0, 344.0 ],
-									"text" : "Raw accelerometer values can be mapped onto arbitrary presets. This opens up the possibility of using gesture to navgiate the unknown sounds between some stored known ones."
+									"patching_rect" : [ 465.0, 450.0, 63.0, 143.0 ],
+									"text" : "Likelihood values are used again to control the balance of several video streams"
 								}
 
 							}
@@ -688,15 +688,14 @@
 									"fontname" : "Lato",
 									"fontsize" : 14.0,
 									"id" : "obj-40",
-									"linecount" : 7,
+									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 240.0, 600.0, 200.0, 124.0 ],
+									"patching_rect" : [ 240.0, 600.0, 200.0, 57.0 ],
 									"presentation" : 1,
-									"presentation_linecount" : 3,
-									"presentation_rect" : [ 15.0, 277.0, 525.0, 57.0 ],
-									"text" : "Raw accelerometer values can be mapped onto arbitrary presets. This opens up the possibility of using gesture to navgiate the unknown sounds between some stored known ones.",
+									"presentation_rect" : [ 15.0, 277.0, 525.0, 23.0 ],
+									"text" : "Likelihood values are used again to control the balance of several video streams",
 									"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
 								}
 
@@ -726,7 +725,7 @@
 									"patching_rect" : [ 131.0, 600.0, 123.0, 71.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 15.0, 225.0, 315.0, 28.0 ],
-									"text" : "Preset Interpolation Exploring 1",
+									"text" : "Preset Interpolation Exploring 3",
 									"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
 								}
 
@@ -763,10 +762,10 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 15.0, 135.0, 135.0, 195.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 15.0, 135.0, 870.0, 60.0 ],
+									"presentation_rect" : [ 15.0, 135.0, 1005.0, 60.0 ],
 									"rounded" : 3.0,
 									"spacing_y" : 0.0,
-									"tabs" : [ "Data Mapping", "State to Sound", "Physical Gesture to Sound Gesture", "Preset Interpolation 1", "Preset Interpolation 2" ],
+									"tabs" : [ "Data Mapping", "State to Sound", "Physical Gesture to Sound Gesture", "Preset Interpolation 1", "Preset Interpolation 2", "Preset Interpolation 3" ],
 									"valign" : 0
 								}
 
@@ -1003,7 +1002,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 35.0, 142.0, 1370.0, 723.0 ],
+						"rect" : [ 0.0, 26.0, 1239.0, 901.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
