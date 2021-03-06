@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 35.0, 116.0, 1370.0, 749.0 ],
+		"rect" : [ 35.0, 144.0, 1370.0, 721.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -41,6 +41,18 @@
 		"assistshowspatchername" : 0,
 		"title" : "MetaBow Toolkit - Preset Interpolation 1",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 209.5, 435.0, 81.0, 22.0 ],
+					"text" : "loadmess -48"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-77",
 					"maxclass" : "newobj",
@@ -76,7 +88,7 @@
 						"carrier" : [ 220 ],
 						"harmonicity" : [ 199.0 ],
 						"index" : [ 42.0 ],
-						"live.gain~" : [ 0.0 ]
+						"live.gain~" : [ -48.0 ]
 					}
 ,
 					"text" : "autopattr",
@@ -554,6 +566,14 @@
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-97", 0 ],
+					"midpoints" : [ 219.0, 513.0, 24.5, 513.0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 1 ],
 					"source" : [ "obj-10", 0 ]
