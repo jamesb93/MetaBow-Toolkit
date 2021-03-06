@@ -26,6 +26,11 @@ var data = {
 		"name" : "Preset Interpolation Exploring 2",
 		"blurb" : "The likelihood values from the static gesture recognition abstraction are used to interpolate between synthesiser parameters.",
 		"patch" : "mb-example-preset-interp2"
+	},
+	"5" : {
+		"name" : "Preset Interpolation Exploring 3",
+		"blurb" : "Likelihood values are used again to control the balance of several video streams.",
+		"patch" : "mb-example-preset-video"
 	}
 }
 
