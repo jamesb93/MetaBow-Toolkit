@@ -68,7 +68,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 35.0, 114.0, 1239.0, 901.0 ],
+						"rect" : [ 0.0, 26.0, 1239.0, 901.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -100,13 +100,13 @@
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-9",
-									"linecount" : 10,
+									"linecount" : 38,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 465.0, 450.0, 63.0, 143.0 ],
-									"text" : "Likelihood values are used again to control the balance of several video streams"
+									"patching_rect" : [ 465.0, 450.0, 66.0, 518.0 ],
+									"text" : "Static gesture recognition allows you recognise when different learned 'poses' are happening as well as the balance of all of the trained poses. In this example, the 'likelihood' data for each pose is used to control the volume of different streams of signals, allowing you to dynamically control sound by interpolating different positions."
 								}
 
 							}
@@ -688,14 +688,15 @@
 									"fontname" : "Lato",
 									"fontsize" : 14.0,
 									"id" : "obj-40",
-									"linecount" : 3,
+									"linecount" : 12,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 240.0, 600.0, 200.0, 57.0 ],
+									"patching_rect" : [ 240.0, 600.0, 200.0, 208.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 15.0, 277.0, 525.0, 23.0 ],
-									"text" : "Likelihood values are used again to control the balance of several video streams",
+									"presentation_linecount" : 5,
+									"presentation_rect" : [ 15.0, 277.0, 525.0, 90.0 ],
+									"text" : "Static gesture recognition allows you recognise when different learned 'poses' are happening as well as the balance of all of the trained poses. In this example , the 'likelihood' data for each pose is used to control the volume of different streams of signals , allowing you to dynamically control sound by interpolating different positions.",
 									"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
 								}
 
@@ -725,7 +726,7 @@
 									"patching_rect" : [ 131.0, 600.0, 123.0, 71.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 15.0, 225.0, 315.0, 28.0 ],
-									"text" : "Preset Interpolation Exploring 3",
+									"text" : "Connecting State To Sound",
 									"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
 								}
 
@@ -1002,7 +1003,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1239.0, 901.0 ],
+						"rect" : [ 35.0, 114.0, 1239.0, 901.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -1054,7 +1055,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 465.0, 555.0, 334.0, 28.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 165.0, 332.0, 335.0, 28.0 ],
+									"presentation_rect" : [ 165.0, 347.0, 335.0, 28.0 ],
 									"text" : "What will you learn?",
 									"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
 								}
@@ -1088,7 +1089,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 136.25, 705.0, 334.0, 28.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 165.0, 210.0, 335.0, 28.0 ],
+									"presentation_rect" : [ 165.0, 225.0, 335.0, 28.0 ],
 									"text" : "Hover over a tutorial for more information.",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
@@ -1336,7 +1337,7 @@
 									"patching_rect" : [ 450.0, 660.0, 198.0, 90.0 ],
 									"presentation" : 1,
 									"presentation_linecount" : 4,
-									"presentation_rect" : [ 165.0, 362.0, 271.0, 74.0 ],
+									"presentation_rect" : [ 165.0, 377.0, 271.0, 74.0 ],
 									"text" : "This section explores abstractions responsible for the treatment and sanitisation of sensor data including smoothing techniques.",
 									"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
 								}
@@ -1668,7 +1669,7 @@
 									"patching_rect" : [ 240.0, 660.0, 200.0, 124.0 ],
 									"presentation" : 1,
 									"presentation_linecount" : 5,
-									"presentation_rect" : [ 165.0, 240.0, 271.0, 90.0 ],
+									"presentation_rect" : [ 165.0, 255.0, 271.0, 90.0 ],
 									"text" : "The sensor data we receive is sometimes unruly and requires sanitisation , scaling or treatment in other ways. This section covers a range of abstractions for dealing with these issues.",
 									"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
 								}
@@ -1698,7 +1699,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 131.0, 660.0, 123.0, 50.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 165.0, 210.0, 210.0, 28.0 ],
+									"presentation_rect" : [ 165.0, 225.0, 210.0, 28.0 ],
 									"text" : "Sensor Control",
 									"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
 								}
@@ -1734,7 +1735,7 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 15.0, 195.0, 135.0, 195.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 15.0, 210.0, 135.0, 375.0 ],
+									"presentation_rect" : [ 15.0, 225.0, 135.0, 375.0 ],
 									"rounded" : 3.0,
 									"tabs" : [ "Framework", "Extractors", "Sensor Control", "Processing" ]
 								}
