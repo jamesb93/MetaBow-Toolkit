@@ -43,12 +43,12 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-6",
-					"linecount" : 8,
+					"linecount" : 7,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 345.0, 435.0, 317.0, 114.0 ],
-					"text" : "Continuous Gesture Recognition is useful when you want to identify which gesture is being performed as well as 'where' in the gesture you currently are. Imagine drawing two different shapes. Your hand performs two unique gestures over time to do this. Continuous Gesture Recogntion is able to recognise not only which shape you are drawing, but where in the drawing of that shape you are."
+					"patching_rect" : [ 345.0, 435.0, 317.0, 100.0 ],
+					"text" : "Static gesture recognition is useful when you want to identify what \"state\" is currently being occupied. A \"state\" might refer to a position of the hand/bow/arm, or a more general type of motion and gesture. If you aren't concerned \"where\" in the gesture you are, it can sometimes be more accurate and robust than continuous gesture recognition."
 				}
 
 			}
@@ -231,28 +231,28 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "mb.continuous.maxpat",
-				"bootpath" : "~/Cloud/Consulting/GestureRecognition/MetaBow Toolkit/misc",
+				"bootpath" : "~/Documents/Max 8/Packages/MetaBow-Toolkit/misc",
 				"patcherrelativepath" : "../../misc",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mb.continuous.js",
-				"bootpath" : "~/Cloud/Consulting/GestureRecognition/MetaBow Toolkit/misc",
+				"bootpath" : "~/Documents/Max 8/Packages/MetaBow-Toolkit/misc",
 				"patcherrelativepath" : "../../misc",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mb.static.maxpat",
-				"bootpath" : "~/Cloud/Consulting/GestureRecognition/MetaBow Toolkit/misc",
+				"bootpath" : "~/Documents/Max 8/Packages/MetaBow-Toolkit/misc",
 				"patcherrelativepath" : "../../misc",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mb.static.js",
-				"bootpath" : "~/Cloud/Consulting/GestureRecognition/MetaBow Toolkit/misc",
+				"bootpath" : "~/Documents/Max 8/Packages/MetaBow-Toolkit/misc",
 				"patcherrelativepath" : "../../misc",
 				"type" : "TEXT",
 				"implicit" : 1

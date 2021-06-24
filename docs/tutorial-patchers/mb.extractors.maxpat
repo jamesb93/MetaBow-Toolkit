@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 35.0, 116.0, 1239.0, 899.0 ],
+		"rect" : [ 35.0, 88.0, 1370.0, 777.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,52 +40,6 @@
 		"assistshowspatchername" : 0,
 		"title" : "MetaBow Toolkit - Extractors",
 		"boxes" : [ 			{
-				"box" : 				{
-					"id" : "obj-12",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 195.0, 690.0, 202.0, 20.0 ],
-					"text" : "another sensor"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 1,
-					"fontname" : "Lato",
-					"fontsize" : 16.0,
-					"id" : "obj-13",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 195.0, 660.0, 202.0, 26.0 ],
-					"text" : "Mari Kamura Sensor"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 1,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-14",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "mb.bitalino.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 15.0, 660.0, 165.0, 151.0 ],
-					"varname" : "grec-bitalino[3]",
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"id" : "obj-9",
 					"maxclass" : "comment",
@@ -261,11 +215,6 @@
 			"obj-11::obj-15" : [ "live.numbox[10]", "live.numbox[5]", 0 ],
 			"obj-11::obj-16" : [ "live.numbox[15]", "live.numbox", 0 ],
 			"obj-11::obj-17" : [ "live.text[2]", "live.text[1]", 0 ],
-			"obj-14::obj-1" : [ "live.numbox[13]", "live.numbox[5]", 0 ],
-			"obj-14::obj-11" : [ "live.tab[3]", "live.tab[1]", 0 ],
-			"obj-14::obj-15" : [ "live.numbox[12]", "live.numbox[5]", 0 ],
-			"obj-14::obj-16" : [ "live.numbox[14]", "live.numbox", 0 ],
-			"obj-14::obj-17" : [ "live.text[6]", "live.text[1]", 0 ],
 			"obj-6::obj-1" : [ "live.numbox[5]", "live.numbox[5]", 0 ],
 			"obj-6::obj-11" : [ "live.tab[1]", "live.tab[1]", 0 ],
 			"obj-6::obj-15" : [ "live.numbox[6]", "live.numbox[5]", 0 ],
@@ -291,26 +240,6 @@
 ,
 				"obj-11::obj-17" : 				{
 					"parameter_longname" : "live.text[2]"
-				}
-,
-				"obj-14::obj-1" : 				{
-					"parameter_longname" : "live.numbox[13]"
-				}
-,
-				"obj-14::obj-11" : 				{
-					"parameter_longname" : "live.tab[3]"
-				}
-,
-				"obj-14::obj-15" : 				{
-					"parameter_longname" : "live.numbox[12]"
-				}
-,
-				"obj-14::obj-16" : 				{
-					"parameter_longname" : "live.numbox[14]"
-				}
-,
-				"obj-14::obj-17" : 				{
-					"parameter_longname" : "live.text[6]"
 				}
 ,
 				"obj-6::obj-11" : 				{
@@ -352,7 +281,7 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "mb.bitalino.maxpat",
-				"bootpath" : "~/Cloud/Consulting/GestureRecognition/MetaBow Toolkit/misc",
+				"bootpath" : "~/Documents/Max 8/Packages/MetaBow-Toolkit/misc",
 				"patcherrelativepath" : "../../misc",
 				"type" : "JSON",
 				"implicit" : 1
